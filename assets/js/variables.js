@@ -2,10 +2,11 @@
 
 // NOTE: la variable Money contiene los montos de las cartas, cochinito y cantidad de ceros a mostrar,
 // si una carta dice que gano bs. 500.000 corresponde al blueCard en la posicion 5 y se le agregan los ceros
+// en el archivo GameCard.json en la posicion indexMoney lo que vamos a ver es el index del array, no el monto
 // IMPORTANTE: no quitar el 1 antes de los ceros ya que funciona como multiplicador
 
 let money = {
-  ceros: 100,
+  ceros: 100000,
   blueCard: [0,1,2,3,4,5,6,7,8,9],
   greenCard: [0, 1.5, 2.5, 6, 7, 8, 3],
   pig: 2
