@@ -1,0 +1,36 @@
+<div class="bg">
+  <div class="row" id="game_cards">
+    <div class="col" id="board">
+    </div>
+    <div class="col buttons">
+        <div class="container_time">
+          <div class="box_time">
+              <span id="timer"></span>
+          </div>
+        </div>
+        <div class=" box_btn">
+            <button class="start_button" disabled onclick="startMemory()">Inciar</button>
+        </div>
+        <div class="box_tooltip">
+            <button class="inst_btn">
+            <img src="../assets/img/icon_dynamic.png" alt=""></button>
+            <div class="tooltip">
+              <div class="bordes">
+                <h6 class="title_inst"> Instrucciones:</h6>
+                <ol>
+                  <li>Encuentra el anverso y reverso de cada billete antes de que se termine el tiempo.</li>
+                  <li>Para voltear las cartas haz clic sobre cada una de ellas.</li>
+                  <li>Debes encontrar todas las parejas antes de que se terminen los 40 segundos.</li>
+                </ol>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="game_message ani">
+  <div class="game-end ">
+    <button class="btn_endgame" onclick="closedModalMemory()">X</button>
+    <span class="result"></span>
+  </div>
+</div>

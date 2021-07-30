@@ -1,0 +1,18 @@
+@font-face {
+  font-family: BBVA;
+  src: url(../lib/fonts/bbva/BentonSansBBVA-Medium.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: BBVA;
+  src: url(../lib/fonts/bbva/BentonSansBBVA-Book.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: BBVA;
+  src: url(../lib/fonts/bbva/BentonSansBBVA-Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}

@@ -1,0 +1,46 @@
+<div class="containerAvatar">
+  <div class="textTitle">
+    <p class="h2">
+      Selecciona tu personaje
+    </p>
+  </div>
+  <div class="selectAvatar">
+    <button class="boy active" data-child='boy' onclick="btn(this.dataset.child)">
+      <img src="assets/icons/boy.png" alt="boy" >
+      Niño
+    </button>
+    <button class="girl" data-child='girl' onclick="btn(this.dataset.child)" >
+      <img src="assets/icons/girl.png" alt="girl" >
+      Niña
+    </button>
+  </div>
+  <div class="imgAvatar">
+  </div>
+  <div class="containerColor">
+    <div class="textColor">
+      <p class="ps-2">Piel</p>
+      <p class="ps-1">Cabello</p>
+      <p>Ropa</p>
+    </div>
+    <div class="btnColors">
+      <div class="columnColors">
+        <div class="colors" style='background-color: #e19d6a;' onclick="skin('#e19d6a')"></div>
+        <div class="colors" style='background-color: #F7C0A2;' onclick="skin('#F7C0A2')"></div>
+        <div class="colors" style='background-color: #765137;' onclick="skin('#765137')"></div>
+      </div>
+      <div class="columnColors">
+        <div class="colors" style='background-color: #e5c536;' onclick="hair('#e5c536')"></div>
+        <div class="colors" style='background-color: #4C141A;' onclick="hair('#4C141A')"></div>
+        <div class="colors" style='background-color: #2a2a2a;' onclick="hair('#2a2a2a')"></div>
+      </div>
+      <div class="columnColors">
+        <div class="colors" style='background-color: #ff8500;' onclick="clothes('#ff8500', '#DB6D06')"></div>
+        <div class="colors" style='background-color: #f0584f;' onclick="clothes('#f0584f', '#c74941')"></div>
+        <div class="colors" style='background-color: #428c4b;' onclick="clothes('#428c4b', '#316737')"></div>
+      </div>
+    </div>
+    <div class="btnDone">
+      <button class="btn btn-primary" onclick="nextAwards()">Listo</button>
+    </div>
+  </div>
+</div>

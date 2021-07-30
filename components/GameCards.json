@@ -1,0 +1,1241 @@
+[
+  [
+    {
+      "text": "_________es el primer paso en la planificación financiera.",
+      "options":[
+        {
+          "text": "Tener una meta.",
+          "valid": true
+        },
+        {
+          "text": "Comprar una alcancía.",
+          "valid": false
+        },
+        {
+          "text": "Guardar el dinero del almuerzo.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien!.",
+        "negative": "La respuesta correcta es Tener una meta. No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "Ana quiere tener su fiesta de cumpleaños. ¿Qué necesita hacer? ",
+      "options":[
+        {
+          "text": "Planificar la fiesta y así ahorrar dinero.",
+          "valid": true
+        },
+        {
+          "text": "Pedir a sus amigos que colaboren.",
+          "valid": false
+        },
+        {
+          "text": "Vender sus libros del colegio para obtener dinero.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Primero debes planificar lo que quieres hacer para luego saber cuánto debes ahorrar.",
+        "negative": "Primero debes planificar lo que quieres hacer para luego saber cuánto debes ahorrar. No has ganado dinero.",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "Ahorrar dinero es un buen ________ al igual que lavarse los dientes.",
+      "options":[
+        {
+          "text": "Truco",
+          "valid": false
+        },
+        {
+          "text": "Hábito",
+          "valid": true
+        },
+        {
+          "text": "Pérdida de tiempo",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Ahorrar dinero debe convertirse en un hábito para que cada vez sea más fácil hacerlo.",
+        "negative": " Recuerda que ahorrar debe convertirse en un hábito. No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": " ¿Qué cosas puede dejar de hacer Irene para ahorrar dinero y poder ir al próximo concierto de su cantante favorito? ",
+      "options":[
+        {
+          "text": "Ir a la peluquería todas las semanas.",
+          "valid": false
+        },
+        {
+          "text": "Comprar chucherías todos los días.",
+          "valid": false
+        },
+        {
+          "text": "Ambas respuestas son correctas.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Mientras más deje de gastar Irene, más dinero podrá ahorrar.",
+        "negative": "Mientras más deje de gastar Irene, más dinero podrá ahorrar. No has ganado dinero. ",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "La tía Daniela quiere comprar el cuadro de un artista que cuesta Bs. 500.000 para el día de su cumpleaños, pero ella no tiene suficiente dinero. ¿Qué puede hacer? ",
+      "options":[
+        {
+          "text": "Desistir de comprar el cuadro por no tener el dinero",
+          "valid": false
+        },
+        {
+          "text": "Crear un plan para ahorrar los Bs. 500.000 e ir a comprar el cuadro.",
+          "valid": true
+        },
+        {
+          "text": "Esperar a que alguien se lo regale.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Para comprar lo que deseamos es necesario ahorrar dinero.",
+        "negative": "Recuerda que para comprarte lo que deseas es necesario ahorrar dinero. No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "Daniel quiere un teléfono celular para su cumpleaños. Se debe comprar el teléfono que _______",
+      "options":[
+        {
+          "text": "Sea más caro porque tiene que ser el mejor.",
+          "valid": false
+        },
+        {
+          "text": "Su cantante favorito tiene.",
+          "valid": false
+        },
+        {
+          "text": "Tiene el mejor plan para satisfacer sus necesidades.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Debemos comprar las cosas según nuestras necesidades.",
+        "negative": "Recuerda que debemos comprar las cosas según nuestras necesidades. No has ganado dinero.",
+        "indexMoney": 3
+      }
+    },
+    {
+      "text": "Acaban de salir al mercado unos zapatos de deporte de última moda, pero tú acabas de comprarte los de la línea anterior. ¿Qué debes hacer?",
+      "options":[
+        {
+          "text": "Usar el par que compraste con orgullo.",
+          "valid": true
+        },
+        {
+          "text": "Comprar el nuevo estilo inmediatamente.",
+          "valid": false
+        },
+        {
+          "text": "No hacer deporte porque ya tus zapatos no están de moda.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! No debes comprar cosas que no necesitas.",
+        "negative": "No debes gastar en cosas que no necesitas, puedes seguir usando los zapatos que ya tienes. No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "¿Cuál es el mejor momento para empezar a ahorrar?",
+      "options":[
+        {
+          "text": "Próximo mes.",
+          "valid": false
+        },
+        {
+          "text": "Cuando me regalen dinero el día de mi cumpleaños.",
+          "valid": false
+        },
+        {
+          "text": "Ahora mismo.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! No dejes para mañana lo que puedes hacer hoy.",
+        "negative": " El mejor momento para empezar ahorrar es Ahora mismo. No dejes para mañana lo que puedes hacer hoy.  No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "Tú deseas establecer una meta financiera. ¿Cuál es el primer paso?",
+      "options":[
+        {
+          "text": "Decidir para qué utilizarás el dinero ahorrado.",
+          "valid": true
+        },
+        {
+          "text": "Decirle lo que quieres a tus amigos.",
+          "valid": false
+        },
+        {
+          "text": " No es necesario establecer metas.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Para empezar a ahorrar primero se debe decidir el objetivo para el que utilizarás el dinero.",
+        "negative": "Para empezar a ahorrar primero se debe decidir el objetivo para el que utilizarás el dinero. No has ganado dinero.",
+        "indexMoney": 9
+      }
+    },
+    {
+      "text": "Tan pronto como consigues dinero, debes____",
+      "options":[
+        {
+          "text": "Ir al centro comercial a comer algo.",
+          "valid": false
+        },
+        {
+          "text": "Establecer metas.",
+          "valid": true
+        },
+        {
+          "text": "Ir al cine.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Lo primero que se debe hacer es establecer las metas que se quieren lograr.",
+        "negative": "Lo primero que se debe hacer es establecer las metas que se quieren lograr. No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "Tú eres demasiado joven para comenzar a ahorrar dinero:",
+      "options":[
+        {
+          "text": "Verdadero",
+          "valid": false
+        },
+        {
+          "text": "Falso",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Nunca se es demasiado joven para empezar a ahorrar.",
+        "negative": "Nunca se es demasiado joven para empezar a ahorrar. No has ganado dinero.",
+        "indexMoney": 3
+      }
+    },
+    {
+      "text": "Si estás ahorrando dinero debes:",
+      "options":[
+        {
+          "text": "Mantenerte al día con la última moda.",
+          "valid": false
+        },
+        {
+          "text": "Comprar los últimos videojuegos tan pronto como salen.",
+          "valid": false
+        },
+        {
+          "text": "Hacer el sacrificio de no comprar todo lo que te gusta para que puedas guardar dinero.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! No debemos gastar en cosas que no necesitamos.",
+        "negative": "Recuerda que no debemos gastar en cosas que no necesitamos. No has ganado dinero.",
+        "indexMoney": 7
+      }
+    },
+    {
+      "text": "El Sr. Fernando gana más dinero que el Sr. Daniel. El Sr. Daniel ahorra más que el Sr. Fernando. ¿Quién tendrá más dinero en 1 año?",
+      "options":[
+        {
+          "text": "Sr. Fernando.",
+          "valid": false
+        },
+        {
+          "text": "Sr. Daniel.",
+          "valid": true
+        },
+        {
+          "text": "Tendrán aproximadamente la misma cantidad.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! En un año el que tendrá más dinero ahorrado será el Sr. Daniel.",
+        "negative": "En un año el que tendrá más dinero ahorrado será el Sr. Daniel. No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "Planificar el futuro te ayuda a ______tu objetivo.",
+      "options":[
+        {
+          "text": "Evitar.",
+          "valid": false
+        },
+        {
+          "text": "Vender.",
+          "valid": false
+        },
+        {
+          "text": "Lograr.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Planificar tu futuro te ayudará a lograr los objetivos que te propongas.",
+        "negative": "Planificar tu futuro te ayudará a lograr los objetivos que te propongas. No has ganado dinero.",
+        "indexMoney": 4
+      }
+    },
+    {
+      "text": "Es bueno ahorrar para tener dinero cuando_____",
+      "options":[
+        {
+          "text": "Rompiste el vidrio del vecino con la pelota y debes pagarlo.",
+          "valid": false
+        },
+        {
+          "text": "Deseas comprarte un nuevo videojuego.",
+          "valid": false
+        },
+        {
+          "text": "Todas las anteriores.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Debemos tener guardado dinero para distintas situaciones.",
+        "negative": "No siempre guardamos dinero para comprarnos cosas, debemos ahorrar para distintas situaciones. No has ganado dinero.",
+        "indexMoney": 8
+      }
+    },
+    {
+      "text": "Alejandro tenía Bs. 500.000 y gastó Bs. 350.000. Rodolfo tenía Bs. 350.000 y gastó Bs. 100.000. ¿Quién tiene más dinero ahora?",
+      "options":[
+        {
+          "text": "Rodolfo.",
+          "valid": true
+        },
+        {
+          "text": "Alejandro.",
+          "valid": false
+        },
+        {
+          "text": "Tienen la misma cantidad.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Rodolfo es el que tiene más dinero.",
+        "negative": "Rodolfo es el que tiene más dinero. No has ganado dinero. ",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "Escoger la mejor manera para obtener el nuevo juego de video que deseo es:",
+      "options":[
+        {
+          "text": "Realizar pequeños trabajos y ahorrar el dinero suficiente para comprarlo.",
+          "valid": true
+        },
+        {
+          "text": "Ir a casa de un amigo todas las tardes a jugar.",
+          "valid": false
+        },
+        {
+          "text": "Le pido dinero prestado a mi primo.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! La mejor manera de comprar lo que quieres, es realizando pequeños trabajos y ahorrando ese dinero.",
+        "negative": "La mejor manera de comprar lo que quieres, es realizando pequeños trabajos y ahorrando ese dinero. No has ganado dinero.",
+        "indexMoney": 4
+      }
+    },
+    {
+      "text": "Valentina está en el último año del colegio y es muy buena en matemática, ¿qué puede hacer para ganar dinero?",
+      "options":[
+        {
+          "text": "Hacerle las tareas a las amigas y cobrarles dinero.",
+          "valid": false
+        },
+        {
+          "text": "Darle clases particulares de matemática a otras personas.",
+          "valid": true
+        },
+        {
+          "text": "Obtener mejores calificaciones y pedir a sus papás que la recompensen por eso. ",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Dar clases particulares a otras personas es una buena manera de ganar dinero.",
+        "negative": "Recuerda que cada quien debe hacer sus tareas y que estudiar y sacar buenas calificaciones es tu deber, no debes esperar nada a cambio de ello. No has ganado dinero. ",
+        "indexMoney": 8
+      }
+    },
+    {
+      "text": "El año pasado tus papás te regalaron una bicicleta, pero tú quieres una nueva como la que le acaban de regalar a tu mejor amigo. ¿Qué haces?",
+      "options":[
+        {
+          "text": "Le dices a tus papás que te compren una bicicleta nueva.",
+          "valid": false
+        },
+        {
+          "text": "Utilizas la que ya tienes porque está en perfecto estado.",
+          "valid": true
+        },
+        {
+          "text": "Te quedas en casa y no montas la bicicleta porque ya no te gusta la que te regalaron.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! No hace falta gastar en otra bicicleta cuando ya tienes una.",
+        "negative": "Recuerda que debes ahorrar y no gastar en cosas que no son necesarias. No has ganado dinero.",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "¿Cuál es una buena forma de ahorrar dinero?",
+      "options":[
+        {
+          "text": "Colocar dinero dentro del Banco.",
+          "valid": false
+        },
+        {
+          "text": "Colocar dinero en una alcancía.",
+          "valid": false
+        },
+        {
+          "text": "Todas las anteriores.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Las dos opciones son una excelente manera de ahorrar dinero.",
+        "negative": "Recuerda colocar dinero en el Banco o en una alcancía, es una buena manera de ahorrar dinero. No has ganado dinero.",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "Se te quedó la lonchera en la casa, por lo que decides:",
+      "options":[
+        {
+          "text": "Comprarte el desayuno en la cantina.",
+          "valid": true
+        },
+        {
+          "text": "No desayunar para no gastar dinero y poder ahorrar.",
+          "valid": false
+        },
+        {
+          "text": "Pedirle a algún compañero que comparta su desayuno contigo.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! No puedes dejar de comer por ahorrar dinero y tampoco pedir que un compañero comparta su desayuno cuando tienes dinero para comprarlo.",
+        "negative": "Recuerda que no debes dejar de comer para ahorrar dinero y tampoco pedir a un compañero que comparta su desayuno cuando tienes dinero para comprarlo. No has ganado dinero. ",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "Daniela vio que tú lograste comprarte unos patines con tus ahorros y quiere saber cómo hiciste para ahorrar ese dinero, ¿qué le dices?",
+      "options":[
+        {
+          "text": "Que gaste lo menos posible de dinero y empiece a pedirle dinero a sus familiares.",
+          "valid": false
+        },
+        {
+          "text": "Que empiece hoy mismo a ahorrar la mesada, que gaste sólo lo necesario y que coloque el dinero en el Banco.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Si Daniela sigue tu consejo podrá ahorrar el dinero que quiere.",
+        "negative": "Recuerda que lo correcto es ahorrar uno mismo para conseguir las cosas que uno quiere. No has ganado dinero.",
+        "indexMoney": 7
+      }
+    },
+    {
+      "text": "¿De dónde proviene el dinero?",
+      "options":[
+        {
+          "text": "Del trabajo",
+          "valid": true
+        },
+        {
+          "text": "Del banco",
+          "valid": false
+        },
+        {
+          "text": "Ninguna de las anteriores",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! El dinero proviene del trabajo realizado.",
+        "negative": "Recuerda, el dinero proviene del trabajo realizado por tus padres o por ti cuando tengas edad para trabajar. No has ganado dinero.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "El ahorro implica ____",
+      "options":[
+        {
+          "text": "Gastar el dinero en cosas que no necesito.",
+          "valid": false
+        },
+        {
+          "text": " Atrasar el consumo que se podría hacer hoy para destinarlo a otros gastos en el futuro. ",
+          "valid": true
+        },
+        {
+          "text": "Comprar sólo las cosas que me gustan. ",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! El ahorro implica atrasar el consumo que se podría hacer hoy para utilizar ese dinero en otros gastos más importantes en el futuro.",
+        "negative": "Recuerda que al ahorrar estás retrasando el consumo que podrías hacer hoy para destinarlo a otros gastos más importantes en el futuro. No has ganado dinero.",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "Con la mesada que te dan tus padres puedes:",
+      "options":[
+        {
+          "text": "Gastarla completa en cosas que te gustan.",
+          "valid": false
+        },
+        {
+          "text": "Gastar una parte en cosas que necesitas y la otra parte guardarla para futuras compras.",
+          "valid": true
+        },
+        {
+          "text": "Ninguna de las anteriores.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Deberías siempre utilizar la mesada para comprar cosas que necesitas y ahorras lo que te sobre para futuras necesidades.",
+        "negative": "Recuerda que con la mesada puedes comprar cosas que necesites y ahorrar lo que te sobre para futuras compras o necesidades.  No has ganado dinero.",
+        "indexMoney": 8
+      }
+    },
+    {
+      "text": "El consumo inteligente se refiere a _____",
+      "options":[
+        {
+          "text": "Comprar todo lo que nos guste.",
+          "valid": false
+        },
+        {
+          "text": "Comprar lo más caro porque es de mejor calidad.",
+          "valid": false
+        },
+        {
+          "text": "Comprar aquello que realmente se necesita y a un precio adecuado dada su calidad.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! El consumo inteligente se refiere a comprar lo que se necesita a un precio acorde a su calidad.",
+        "negative": "Recuerda que el consumo inteligente se refiere a comprar aquello que realmente se necesita a un precio adecuado a su calidad. No has ganado dinero.",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "Si necesitas comprarte unos zapatos para jugar tenis porque los que tenías se rompieron, que haces: _____",
+      "options":[
+        {
+          "text": "Compras los zapatos en la primera tienda que visitas.",
+          "valid": false
+        },
+        {
+          "text": "Visitas varias tiendas para comparar precio-calidad de los zapatos.",
+          "valid": true
+        },
+        {
+          "text": "Vas directamente a la tienda que tiene la publicidad de los modelos más nuevos de zapatos.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Al visitar varias tiendas podrás comparar precios y decidir por el que ofrezca un mejor precio adecuado a la calidad del zapato.",
+        "negative": "Recuerda que para hacer compras inteligentes debes visitar varias tiendas para poder comparar el precio y la calidad de los zapatos que necesitas.  No has ganado dinero.",
+        "indexMoney": 8
+      }
+    },
+    {
+      "text": "¿Qué es un cajero automático?",
+      "options":[
+        {
+          "text": "Es una máquina que permite, a través de una tarjeta, que las personas retiren el dinero que tienen guardado en el banco.",
+          "valid": false
+        },
+        {
+          "text": "Es una máquina que permite, a través de una tarjeta, que las personas depositen dinero en la cuenta personal o de otras personas.",
+          "valid": false
+        },
+        {
+          "text": "Ambas respuestas son correctas.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Acertaste! El cajero automático es una máquina que permite, a través de una tarjeta, que las personas retiren el dinero que tienen guardado en el banco, además de poder realizar otras operaciones tales como pagos, transferencias y depósitos.",
+        "negative": "Es muy importante que conozcas que los cajeros automáticos son máquinas que permiten, a través de una tarjeta, que las personas retiren el dinero que tienen guardado en el banco, además de poder realizar otras operaciones tales como pagos, transferencias y depósitos. No has ganado dinero",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "¿Qué son los gastos?",
+      "options":[
+        {
+          "text": "El dinero que una persona usa para comprar cosas.",
+          "valid": true
+        },
+        {
+          "text": "El dinero que una persona usa para vender cosas.",
+          "valid": false
+        },
+        {
+          "text": "El dinero que una persona ahorra en el banco.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Los gastos es el dinero que una persona usa cuando compra cosas.",
+        "negative": "Recuerda que los gastos hacen referencia al dinero que una persona usa para comprar cosas. No has ganado dinero.  ",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "María y Amalia reciben de mesada la misma cantidad; ambas desean ahorrar para comprarse un vestido de Bs. 600.000. Amalia planifica ahorrar Bs. 100.000 mensuales y María planifica ahorrar Bs. 120.000 bi-mensuales (cada dos meses). ¿Quién se podrá comprar el vestido primero?",
+      "options":[
+        {
+          "text": "Amalia.",
+          "valid": true
+        },
+        {
+          "text": "María",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Así es! Amalia logrará ahorrar los Bs. 600.000 en 6 meses, mientras que María logrará ahorrarlos en 10 meses.",
+        "negative": "María logrará ahorrar los Bs. 600.000 en 10 meses porque sólo está ahorrando Bs. 60.000 mensual. Mientras que Amalia los ahorrará en 6 meses. No has ganado dinero.",
+        "indexMoney": 8
+      }
+    },
+    {
+      "text": "El servicio que ofrecen los bancos para guardar dinero y movilizarlo fácilmente se denomina:",
+      "options":[
+        {
+          "text": "Bóveda.",
+          "valid": false
+        },
+        {
+          "text": "Caja Fuerte.",
+          "valid": false
+        },
+        {
+          "text": "Cuenta Corriente",
+          "valid": true
+        },
+        {
+          "text": "Todas las anteriores",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "La cuenta corriente es un excelente servicio que ofrecen los bancos para que podamos guardar y movilizar nuestro dinero.",
+        "negative": "Lo sentimos! La respuesta correcta es Cuenta Corriente.",
+        "indexMoney": 6
+      }
+    },
+    {
+      "text": "Las personas trabajan, y por su trabajo reciben un pago en dinero que se le llama:",
+      "options":[
+        {
+          "text": "Sueldo o Salario",
+          "valid": true
+        },
+        {
+          "text": "Bono.",
+          "valid": false
+        },
+        {
+          "text": "Premio.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! El sueldo o salario es el pago en dinero que reciben las personas por trabajar.",
+        "negative": "Te has equivocado. El dinero pagado a una persona por su trabajo se le llama sueldo o salario.",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "El dinero que te dan tus padres para tus gastos semanales en el colegio se llama",
+      "options":[
+        {
+          "text": "Sueldo o salario.",
+          "valid": false
+        },
+        {
+          "text": "Mesada.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "Excelente! Los niños y jóvenes no tienen un sueldo porque no trabajan, por lo tanto sus padres le dan mesada para sus gastos en la semana.",
+        "negative": "Los niños y jóvenes no tienen un sueldo porque no trabajan, por lo tanto sus padres le dan mesada para sus gastos en la semana.",
+        "indexMoney": 4
+      }
+    },
+    {
+      "text": "Estás ahorrando de la mesada que te dan tus padres para las vacaciones. Te dicen tus amigos que salió un nuevo video juego que ya todos lo tienen. ¿Qué debes hacer:?",
+      "options":[
+        {
+          "text": "Gastarte los ahorros para tus vacaciones en ese video juego nuevo.",
+          "valid": false
+        },
+        {
+          "text": "Hacer el sacrificio de no comprar el juego para seguir ahorrando para tus vacaciones.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "Muy bien! Si estás ahorrando para un propósito debes mantenerlo y no gastar en lo primero que se te antoje.",
+        "negative": "Debes mantener firme tu meta de ahorro no gastar en lo primero que se te antoje ni pedir más dinero a tus padres.",
+        "indexMoney": 2
+      }
+    }
+  ],
+  [
+    {
+      "text": "El fin de semana tu mamá te pide que la ayudes con las labores de la casa como botar la basura y lavar los platos. ¿Qué haces?.",
+      "options":[
+        {
+          "text": "Botas la basura y lavas los platos.",
+          "valid": true
+        },
+        {
+          "text": "Le dices a mamá que estás cansado y te quedas viendo televisión.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "Has hecho lo correcto. Tú como hijo debes ayudar en las labores de la casa sin esperar nada a cambio. ¡Avanzarás una casilla!.",
+        "negative": "Recuerda que como hijo debes ayudar en las labores de la casa."
+      }
+    },
+    {
+      "text": "Tu habitación está desordenada y quieres ir a casa de un amigo. ¿Qué debes hacer?.",
+      "options":[
+        {
+          "text": "Dejar la habitación desordenada e irte a casa de tu amigo.",
+          "valid": false
+        },
+        {
+          "text": "Ordenar tu habitación y luego vas a casa de tu amigo.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Tu habitación siempre debe permanecer ordenada. ¡Avanzarás una casilla!.",
+        "negative": "Recuerda que tu habitación siempre debe estar ordenada."
+      }
+    },
+    {
+      "text": "Tienes que hacer la tarea para mañana y una amiga te acaba de invitar a su casa para que vayas a jugar. ¿Qué haces?.",
+      "options":[
+        {
+          "text": "Le dices que sí y que después haces la tarea.",
+          "valid": false
+        },
+        {
+          "text": "Le dices que sí, pero que irás al terminar tu tarea.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Primero debes cumplir con tus tareas para luego ir a jugar. ¡Avanzarás una casilla!.",
+        "negative": "Recuerda que primero debes hacer tus tareas para luego poder jugar. "
+      }
+    },
+    {
+      "text": "Tu tío Omar te dijo que podías trabajar con él en su tienda este viernes en la mañana. ¿Qué le dices?.",
+      "options":[
+        {
+          "text": "Que sí vas a ir aunque tengas que faltar al colegio porque quieres ganar dinero.",
+          "valid": false
+        },
+        {
+          "text": "Que no puedes ir porque tienes que ir al colegio.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Aunque quieras ganar dinero no debes dejar de asistir al colegio. ¡Avanzarás una casilla!.",
+        "negative": "Ten presente que nunca debes faltar al colegio aunque quieras ganar dinero. "
+      }
+    },
+    {
+      "text": "Tu primo te ha invitado el fin de semana al club, pero ya le habías prometido a tu mamá que la ayudarías a ordenar tu clóset. ¿Qué haces?.",
+      "options":[
+        {
+          "text": "Te vas al club con tu primo y dejas que tu mamá ordene tu clóset sola.",
+          "valid": false
+        },
+        {
+          "text": "Agradeces la invitación a tu primo pero te quedas en casa y ayudas a tu mamá a ordenar tu clóset.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! debes cumplir con tus tareas y compromisos antes de ir a divertirte. ¡Avanzarás una casilla!.",
+        "negative": "Recuerda que antes de pensar en divertirte debes cumplir con tus tareas y compromisos."
+      }
+    },
+    {
+      "text": "Tienes examen toda la semana y tu vecino te invita a pasar el fin de semana en la playa. Tú:",
+      "options":[
+        {
+          "text": "Le dices que gracias pero que será para otro fin de semana porque tienes que estudiar.",
+          "valid": true
+        },
+        {
+          "text": "Te vas a la playa y estudias el domingo en la noche cuando llegues.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! debes cumplir con tus tareas y compromisos antes de ir a divertirte. ¡Avanzarás una casilla!.",
+        "negative": "Recuerda que antes de pensar en divertirte debes cumplir con tus tareas y compromisos y no dejarlos para última hora."
+      }
+    },
+    {
+      "text": "El domingo tienes un almuerzo familiar y tu mejor amiga te invita a almorzar a su casa ese mismo día. Tú:",
+      "options":[
+        {
+          "text": "Le das las gracias por invitarte pero le dices que lo dejen para otro día ya que almorzarás con toda tu familia.",
+          "valid": true
+        },
+        {
+          "text": "Aceptas la invitación de tu amiga sin importar que no asistas a almorzar con tu familia.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Es importante que compartas con toda tu familia ya que no siempre están todos juntos. Siempre tendrás tiempo para compartir con los amigos. ¡Avanzarás una casilla!.",
+        "negative": "Es importante que compartas con toda tu familia ya que no siempre están todos juntos. Siempre tendrás tiempo para compartir con los amigos."
+      }
+    }
+  ],
+  [
+    {
+      "text": "Tienes una fiesta el sábado y tu vecino necesita pintar la reja de su casa ese mismo día y te pregunta si tú quieres hacerlo y él te paga por eso. ¿Qué haces?.",
+      "options":[
+        {
+          "text": "Pintas la reja y así ganas un poco de dinero.",
+          "valid": true
+        },
+        {
+          "text": "Vas a la fiesta a disfrutar.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Has elegido la opción correcta. Has ganado Bs. ",
+        "negative": "¡Qué mal! Si hubieses elegido pintar la reja, te hubieses ganado Bs. ",
+        "indexMoney": 2
+      }
+    },
+    {
+      "text": "Tienes una vecina que es una señora mayor. Ella llega del mercado y te pide que por favor la ayudes a subir las bolsas. ¿Qué haces?.",
+      "options":[
+        {
+          "text": "Le dices que ahorita no puedes y te vas.",
+          "valid": false
+        },
+        {
+          "text": "La ayudas y cargas las bolsas hasta su casa.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Tu vecina está muy agradecida y decide pagarte Bs. ",
+        "negative": "Si hubieses ayudado a tu vecina con el mercado te hubieses ganado Bs. ",
+        "indexMoney": 1
+      }
+    },
+    {
+      "text": "Quieres aprovechar las vacaciones para ganar dinero y ahorrarlo para comprarte una cónsola. ¿Qué haces?.",
+      "options":[
+        {
+          "text": "Le dices a tu papá para trabajar con él en la panadería.",
+          "valid": true
+        },
+        {
+          "text": "Te quedas en la casa ayudando a mamá y le dices que te pague.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Al trabajar con papá en estas vacaciones has ganado Bs. ",
+        "negative": "Siempre debes ayudar a mamá con las labores de la casa sin esperar nada a cambio. Si escogías trabajar con papá hubieses ganado Bs. ",
+        "indexMoney": 4
+      }
+    },
+    {
+      "text": "En el colegio de tu hermana van a hacer una verbena, por lo que tú decides:",
+      "options":[
+        {
+          "text": "Ir a la verbena con tu mamá y vender unas tortas que hiciste con ella.",
+          "valid": true
+        },
+        {
+          "text": "Ir a la verbena y ponerte a jugar en otros kioscos.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Has vendido en la verbena todas las tortas que hiciste con tu mamá. ¡Ahora puedes ir a jugar en los demás kioscos!. Has ganado Bs. ",
+        "negative": "Recuerda que estás ahorrando y tratando de ganar dinero, por lo que debes darle prioridad a vender las tortas que hiciste con tu mamá, hubieses ganado Bs. ",
+        "indexMoney": 3
+      }
+    },
+    {
+      "text": "Al pasar el patio, ves caída una pequeña niña en los columpios que se lastimó la rodilla. Ella comienza a llorar por lo que...",
+      "options":[
+        {
+          "text": "Te acercas y la ayudas.",
+          "valid": true
+        },
+        {
+          "text": "Sigues caminando.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Su mamá llega y está muy agradecida de que consolaste a su hija. Has ganado Bs. ",
+        "negative": "Al ver a la niña en el piso debiste haberla ayudado, te hubieses ganado Bs. ",
+        "indexMoney": 4
+      }
+    },
+    {
+      "text": "Has descubierto una nueva receta para preparar gelatina y necesitas dinero para comprarte unos audífonos nuevos, ¿qué haces?.",
+      "options":[
+        {
+          "text": "Preparas gelatina en vasitos y los vendes a tus compañeros de clase.",
+          "valid": true
+        },
+        {
+          "text": "Le pides a tu hermana mayor que te prepare la gelatina para venderla en el colegio.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Para ganar dinero extra y poder comprarte lo que quieres,  debes esforzarte y trabajar. Has ganado Bs. ",
+        "negative": "Si tu hermana prepara la gelatina a ella le corresponderá ganarse el dinero al venderlos. Recuerda que para ganar dinero extra y poder comprarte lo que quieres, debes esforzarte y trabajar, te hubieses podido ganar Bs. ",
+        "indexMoney": 5
+      }
+    },
+    {
+      "text": "El papá de tu vecino necesita ayuda para bajar unas cajas al maletero del edificio. Te pide ayuda pero justamente a esa hora es tu programa de televisión favorito. ¿Qué haces?.",
+      "options":[
+        {
+          "text": "Le dices que estás muy cansado y te quedas viendo tu programa de televisión favorito.",
+          "valid": false
+        },
+        {
+          "text": "Lo ayudas a bajar las cajas al maletero.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Debes ser colaborador con las personas que te rodean, sin esperar nada a cambio. En esta ocasión tu vecino está muy agradecido y toma la decisión de pagarte Bs. ",
+        "negative": "Debes ser colaborador con las personas que te rodean, sin esperar nada a cambio. Si hubieses ayudado al papá de tu vecino, probablemente te habría dado una recompensa, te hubieses ganado Bs. ",
+        "indexMoney": 1
+      }
+    },
+    {
+      "text": "La tía Celia te permite recoger las mazanas de su patio para que las puedas vender. Puedes ahorrar tiempo si las recoges del suelo, pero la calidad no es tan buena. Tú decides escoger las manzanas de.... ",
+      "options":[
+        {
+          "text": "Los árboles",
+          "valid": true
+        },
+        {
+          "text": "El suelo",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Las personas al morder las manzanas crujientes y jugosas, querran comprarte más de ellas. Has ganado Bs. ",
+        "negative": "Si hubieses recogido las manzanas de los árboles, hubieses ganado Bs. ",
+        "indexMoney": 6
+      }
+    }
+  ],
+  [
+    {
+      "text": "Estás en la cantina del colegio porque no llevaste desayuno. ¿Qué te comprarías?.",
+      "options":[
+        {
+          "text": "Pastel de queso (Bs. 12.000).",
+          "valid": true
+        },
+        {
+          "text": "Arepa de queso (Bs. 25.000).",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "¡Excelente! En estos momentos te encuentras ahorrando dinero, por lo que buscas gastar la menor cantidad de dinero posible. Has gastado sólo Bs. ",
+          "spend": 0.12
+        },
+        "negative": {
+          "text": "Debías haber comprado lo más económico para ahorrar dinero. Has gastado Bs. ",
+          "spend": 0.25
+        }
+      }
+    },
+    {
+      "text": "Necesitas comprarte un cuaderno para el colegio. ¿Cuál te comprarías?.",
+      "options":[
+        {
+          "text": "Cuaderno con calcomanías (Bs. 120.000).",
+          "valid": false
+        },
+        {
+          "text": "Cuaderno sencillo (Bs. 80.000).",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "¡Muy bien! Todos los cuadernos cumplen la misma función y tú has logrados ahorrar dinero. Has gastado sólo Bs. ",
+          "spend": 0.8
+        },
+        "negative": {
+          "text": "Debías haber comprado lo más económico para ahorrar dinero. Has gastado Bs. ",
+          "spend": 1.2
+        }
+      }
+    },
+    {
+      "text": "Llevas dos semanas ahorrando dinero y no te has comprado ninguna chuchería, por lo que decides ir al kiosco a comprar:",
+      "options":[
+        {
+          "text": "Chocolate (Bs. 12.000).",
+          "valid": false
+        },
+        {
+          "text": "Galletas (Bs. 10.000).",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "¡Excelente elección! Te has comprado una chuchería pero continúas ahorrando. Has gastado sólo Bs. ",
+          "spend": 0.1
+        },
+        "negative": {
+          "text": "Debías haber comprado lo más económico para ahorrar dinero. Has gastado Bs. ",
+          "spend": 0.12
+        }
+      }
+    },
+    {
+      "text": "Te provoca un dulce de la cantina, por lo que te compras:",
+      "options":[
+        {
+          "text": "Una torta de chocolate (Bs. 18.000).",
+          "valid": false
+        },
+        {
+          "text": "Una bolsita de cotufas (Bs. 10.000).",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "¡Muy bien! Has comprado algo más económico y que te gusta. Has gastado Bs. ",
+          "spend": 0.1
+        },
+        "negative": {
+          "text": "Recuerda que estás ahorrando y que debes tratar de gastar lo menos posible. Has gastado Bs. ",
+          "spend": 1.8
+        }
+      }
+    },
+    {
+      "text": "Estás en una tienda de videojuegos y están los dos juegos que te quieres comprar, ¿cuál eliges?.",
+      "options":[
+        {
+          "text": "Los fantasmas (Bs. 30.000).",
+          "valid": false
+        },
+        {
+          "text": "Carrera de carros (Bs. 20.000).",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "¡Muy bien! Has comprado el juego más económico y que te gusta. Has gastado Bs. ",
+          "spend": 0.2
+        },
+        "negative": {
+          "text": "Recuerda que estás ahorrando y que debes tratar de gastar lo menos posible. Has gastado Bs. ",
+          "spend": 0.3
+        }
+      }
+    },
+    {
+      "text": "Se te quedó la lonchera en la casa, debes comprar tu desayuno. ¿Qué comprarás?.",
+      "options":[
+        {
+          "text": "Un sándwich de jamón y queso (Bs. 30.000).",
+          "valid": true
+        },
+        {
+          "text": "Una galleta de chocolate (Bs. 15.000).",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": " ¡Muy bien! Siempre debes alimentarte correctamente una galleta de chocolate no es un buen desayuno aunque ésta sea más barata que el resto de los alimentos.  Has gastado Bs. ",
+          "spend": 0.3
+        },
+        "negative": {
+          "text": "Aunque estés ahorrando debes alimentarte correctamente, una galleta de chocolate no es un buen desayuno aunque ésta sea más barata que el resto de los alimentos. Has gastado Bs. ",
+          "spend": 0.15
+        }
+      }
+    },
+    {
+      "text": "Te encuentras ahorrando para comprar las entradas al concierto de tu artista favorito. Entras en una tienda de deportes y están los dos artículos que te quieres comprar. ¿Qué comprarás?.",
+      "options":[
+        {
+          "text": "El short para hacer ejercicio (Bs. 110.000).",
+          "valid": true
+        },
+        {
+          "text": "El bolso para llevar la ropa de hacer ejercicio (Bs. 150.000).",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "¡Muy bien! Has comprado el artículo más económico y que también te querías comprar. Has gastado Bs. ",
+          "spend": 1.1
+        },
+        "negative": {
+          "text": "Recuerda que estás ahorrando y que debes tratar de gastar lo menos posible. Has gastado Bs. ",
+          "spend": 1.5
+        }
+      }
+    },
+    {
+      "text": "Acaba de pasar tu cumpleaños y te regalaron muchos juguetes nuevos. Tienes ahorrado dinero de tu mesada y sales de paseo al centro comercial… ¿Qué debes hacer?.",
+      "options":[
+        {
+          "text": "Gastarte el dinero ahorrado de la mesada en otro juguete más.",
+          "valid": false
+        },
+        {
+          "text": "Pasar un rato agradable en el centro comercial sin comprar y así seguir ahorrando.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "Excelente! Puedes salir de paseo sin tener que comprarte un juguete y así ahorras dinero. Has ahorrado Bs. 25.00",
+          "spend": 0
+        },
+        "negative": {
+          "text": "Debes saber disfrutar de un paseo sin tener comprar un juguete obligatoriamente y así ahorras. Has gastado Bs. ",
+          "spend": 0.25
+        }
+      }
+    },
+    {
+      "text": "Invitas a un amigo a pasar la tarde en el club, tu amigo tiene sed y le compras en la fuente de soda:",
+      "options":[
+        {
+          "text": "Un refresco (Bs. 15.000).",
+          "valid": false
+        },
+        {
+          "text": "Una limonada (Bs. 15.000).",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": {
+          "text": "¡Muy bien! Siempre es mejor escoger la bebida más saludable. Has gastado Bs. ",
+          "spend": 0.15
+        },
+        "negative": {
+          "text": "Aunque ambas bebidas cuestan igual; siempre es mejor escoger la bebida más saludable. Has gastado Bs. ",
+          "spend": 0.15
+        }
+      }
+    }
+  ],
+  [
+    {
+      "text": "Para adquirir el hábito del ahorro y cumplir tus metas sólo necesitas decisión, organización y constancia."
+    },
+    {
+      "text": "El ahorro es una útil herramienta para salir de cualquier imprevisto que implique un gasto fuerte."
+    },
+    {
+      "text": "La disciplina y la constancia son indispensables para lograr tu plan de ahorro."
+    },
+    {
+      "text": "La mejor manera de comenzar a ahorrar es elaborar un plan a través del cual puedas organizar tus recursos."
+    },
+    {
+      "text": "El consumo inteligente parte de buscar toda la información necesaria sobre los productos que deseas comprar para estar todo lo informado posible; se buscan varias opciones para cubrir la necesidad, se evalúan vendedores, marcas, calidad, precios, garantías, etc. y con toda la información recabada se toma una decisión."
+    },
+    {
+      "text": "El ahorro requiere práctica y disciplina, resulta apropiado convertirlo en una costumbre."
+    },
+    {
+      "text": "Se deben tener prioridades en aquello en lo que se gasta. Es importante no comprar todo aquello que a uno le provoca. Es posible que por complacer un capricho no se pueda más tarde comprar algo que es realmente necesario."
+    },
+    {
+      "text": "Al acumular pequeñas cantidades se va logrando tener una cifra mayor, que puede servir para hacer compras más grandes en lugar de hacer muchas compras pequeñas. "
+    },
+    {
+      "text": "Los bancos ofrecen los servicios de cuentas corrientes y cuentas de ahorro las cuales puedes manejar fácilmente."
+    }
+  ]
+]

@@ -1,0 +1,75 @@
+<div class="contenedor">
+  <div id="loaderContainer">
+    <div id="wrap" >Cargando</div>
+    <div id="loader" class="d-flex justify-content-center"><img class="alert-icon1" src="assets/img/loader.png"></div>
+  </div>
+    <div style="display: none;" id="cont">
+        <div class="row ">
+            <div class="box box1 col-md-7">
+                <div class="cloud1 slide_left anim cloud_animations"></div>
+            </div>
+            <div class=" box box2 col-md-3">
+                <div class="cloud2  slide_In_Right cloud_animations"></div>
+            </div>
+            <div class=" box box3 col-md-2  ">
+                <div class="cloud3 slide_Right cloud_animations"></div>
+            </div>
+        </div>
+        <div class="row box_cloud">
+                <div  class="img_title1 bounce1 animations"></div>
+                <div  class="img_title2 bounce2 animations"></div>
+                <div  class="img_title3 bounce3 animations"></div>
+                <div  class="img_title4 bounce4 animations"></div>
+        </div>
+        <div class="row">
+            <div class="box_cloud">
+                <img class="cloud4 slide_in_left cloud_animations" src="assets/img/nubes/cloud4.png" alt="">
+                <img id="pigInit" class="pig bounce_In_Down animate__bounce animate__animated" src="assets/img/pig.png" alt="">
+            </div>
+        </div>
+        <div class="row box_cloud">
+            <div  class="title1 bounce_in1 animations"></div>
+            <div  class="title2 bounce_in2 animations"></div>
+            <div  class="title3 bounce_in3 animations"></div>
+        </div>
+        <div class="row box">
+            <div class=" box col-md-9">
+                <div class="cloud5 slide_left cloud_animations"></div>
+                <button class="dynamic_btn fade_In_Down_Big" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="assets/img/icon_dynamic.png" alt="">
+                        Dinámica del Juego
+                </button>
+                <button class="play_btn play fade_In_Down_Big" onclick="nextAvatar()">
+                    <img src="assets/img/icon_play.png" alt="">
+                    Jugar
+                </button>
+            </div>
+            <div class="col-md-3 box3">
+                <div class="cloud6 slide_Right cloud_animations"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal-->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="ModalLabel">Dinámica del Juego </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Bienvenidos a <b>La Gran Aventura del Mundo del Ahorro.</b></p>
+            <p>Participa en esta divertida aventura virtual de preguntas y retos, en donde el objetivo principal es ahorrar dinero para que compres el objeto que selecciones. Además recibirás tips que te servirán para administrar tu dinero de manera adecuada.</p><br>
+            <ol>
+                <li>Elige un personaje y créalo a tu gusto.</li>
+                <li>Selecciona el objeto que deseas comprar.</li>
+                <li>Una vez ubicado en el tablero haz clic en la ruleta para que puedas avanzar.</li>
+                <li>Para comenzar, te daremos Bs. 200.000 y luego contestando correctamente las preguntas de las distintas categorías, obtendrás dinero y podrás avanzar hasta llegar a la meta.</li>
+                <li>En la última casilla tienes un BONO, el cual podrás obtener si terminas a tiempo el reto de memoria.</li>
+                <li>Rompe la alcancía con el martillo y sabrás cuánto dinero has ahorrado para comprar el objeto.</li>
+            </ol>
+        </div>
+      </div>
+    </div>
+</div>
