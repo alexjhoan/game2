@@ -52,6 +52,7 @@ $(document).ready(function() {
   $('#Game').load('components/Game.html');
   $('#Memory').load('components/MemoryGame.html');
   $('#Store').load('components/Store.html');
+  $('#memory').load('components/MemoryGame.html');
   getCards()
   getAudios()
   soundInits()

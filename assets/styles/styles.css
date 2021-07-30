@@ -9,7 +9,7 @@
   --text-hover: #191920;
   --btn: #a3a3a3;
   --btn-hover: #5eb4e5;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
@@ -24,8 +24,12 @@ div,input,button,textarea{
   font-weight: 500;
 }
 
+span{
+  font-weight: 500;
+}
+
 a, p{
-  font-weight: 400;
+  font-weight: 500;
 }
 
 img {
@@ -242,11 +246,6 @@ section > div {
     bottom: 0%;
 }
 /*Modal*/
-.modal-body{
-    height: 12em;
-    overflow-y: scroll;
-
-}
 .modal-content{
     border-radius: 10px;
     border: 6px solid #004DA8;
@@ -260,8 +259,9 @@ section > div {
 }
 .modal-body p, .modal-body li{
     color: #004DA8;
-    font-size: 15px;
+    font-size: 1rem;
     text-align: justify;
+    margin-bottom: 15px;
 }
 .btn-close{
     background: transparent url(../img/icon-close.png);
@@ -1118,7 +1118,7 @@ section > div {
 }
 #Store .continerPrice p{
   margin: 0;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--primary);
 }
@@ -1136,7 +1136,7 @@ width: 415px;
 
 #Store .positivemessage{
 
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--primary);
   background: #ffffff;
@@ -1327,7 +1327,7 @@ button:focus{
 }
 .card.flipCard,
 .card.successful {
-  transition: 1s;
+  transition: .6s;
   transform: rotateY( 180deg );
   pointer-events: none;
 }
@@ -1357,9 +1357,11 @@ button:focus{
   border-color: #006ec1;
   padding: 10px;
 }
-.game-end span{
-  color: #006ec1;
-  font-size: 16px;
+.game-end p{
+  color: var(--primary);
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: justify;
 }
 .btn_endgame{
     float: right;

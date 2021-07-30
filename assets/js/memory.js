@@ -1,61 +1,59 @@
-
   //variables
   var okAudio = new Audio('../assets/sounds/correct.mp3');
   var errorAudio = new Audio('../assets/sounds/error.mp3');
   var s = 40;
+  let endMemory = false
   var cards_memory =[
       {
           type:"1",
-          image: "../assets/img/memory/0.png"
+          image: "assets/img/memory/0.png"
       },
       {
           type:"1",
-          image: "../assets/img/memory/1.png"
+          image: "assets/img/memory/1.png"
       },
       {
           type:"2",
-          image: "../assets/img/memory/2.png"
+          image: "assets/img/memory/2.png"
       },
       {
           type:"2",
-          image: "../assets/img/memory/3.png"
+          image: "assets/img/memory/3.png"
       },
       {
           type:"3",
-          image: "../assets/img/memory/4.png"
+          image: "assets/img/memory/4.png"
       },
       {
           type:"3",
-          image: "../assets/img/memory/5.png"
+          image: "assets/img/memory/5.png"
       },
       {
           type:"4",
-          image: "../assets/img/memory/6.png"
+          image: "assets/img/memory/6.png"
       },
       {
           type:"4",
-          image: "../assets/img/memory/7.png"
+          image: "assets/img/memory/7.png"
       },
       {
           type:"5",
-          image: "../assets/img/memory/8.png"
+          image: "assets/img/memory/8.png"
       },
       {
           type:"5",
-          image: "../assets/img/memory/9.png"
+          image: "assets/img/memory/9.png"
       },
       {
           type:"6",
-          image: "../assets/img/memory/10.png"
+          image: "assets/img/memory/10.png"
       },
       {
           type:"6",
-          image: "../assets/img/memory/11.png"
+          image: "assets/img/memory/11.png"
       },
   ]
 
-  var mixCards = $("#board");
-  var allCards = mixCards.children();
   function loadMemoryCards() {
     for (var i = 0; i < cards_memory.length; i++) {
       var boardElements = $(
@@ -68,9 +66,12 @@
       );
       boardElements.appendTo("#board");
     }
-    while (allCards.length) {
-      mixCards.append(allCards.splice(Math.floor(Math.random() * allCards.length), 1)[0]);
-    }
+    let allCards = $("#board").children();
+    setTimeout(() => {
+      while (allCards.length) {
+        $("#board").append(allCards.splice(Math.floor(Math.random() * allCards.length), 1)[0]);
+      }
+    }, 100);
   }
 
     var turn = 0;
@@ -114,7 +115,7 @@
           setTimeout(function() {
             $(".card").removeClass("flipCard");
 
-          }, 500);
+          }, 1000);
         }
       }
     }
@@ -135,12 +136,9 @@
         $('.result').text("");
     },2000);
     setTimeout(() => {
-      if (!$(".game_message.ani")) {
-        console.log('si pasa el if')
+      if (endMemory) {
         $('#Memory').hide()
         $('#Game').show()
-      }else{
-        console.log('ago pasa')
       }
     }, 500);
 
@@ -155,12 +153,14 @@
     addAudios(okAudio);
     $(".game_message").css("display","block");
     $('.result').text("¡Muy bien! has ganado Bs. 200.000");
+    endMemory = true
   }
   function failedMessage(){
     $(".card").toggleClass("locked");
     addAudios(errorAudio);
     $(".game_message").css("display","block");
     $('.result').text("No pudiste terminar a tiempo. No haz ganado el bono.");
+    endMemory = true
   }
   function tiempo  () {
     gameTimer = setInterval(function() {
