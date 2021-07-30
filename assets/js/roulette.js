@@ -79,6 +79,9 @@ function spinner() {
     setTimeout(() => {
       $("#rouletteSpin").prop("disabled", true);
     }, 6510);
+    setTimeout(() => {
+      nextMemory()
+    }, (41 - varGame.oldAvatarPosition)*1000 + 3800);
   }
 
   let viewCardColor

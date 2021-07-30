@@ -1,6 +1,4 @@
   //variables
-  var okAudio = new Audio('../assets/sounds/correct.mp3');
-  var errorAudio = new Audio('../assets/sounds/error.mp3');
   var s = 40;
   let endMemory = false
   var cards_memory =[
@@ -97,9 +95,11 @@
           .data("type");
 
         if (secondOpenCard === firstOpenCard) {
-            addAudios(okAudio);
+            soundCorrect.play()
            $(".flipCard").addClass("successful");
-           $(".flipCard").addClass("hidden");
+           setTimeout(() => {
+             $(".flipCard").addClass("hidden");
+           }, 400);
 
            reset();
 
@@ -110,12 +110,11 @@
             }, 1000);
           }
         } else {
-        addAudios(errorAudio);
+          soundError.play()
           reset();
           setTimeout(function() {
             $(".card").removeClass("flipCard");
-
-          }, 1000);
+          }, 500);
         }
       }
     }
@@ -126,6 +125,8 @@
     $(".game_message").css("display","none");
     $(".game_message").removeClass("ani ani2")
      tiempo();
+
+    $('#pig').removeClass('animate__tada animate__headShake')
   }
 
   function closedModalMemory() {
@@ -139,6 +140,27 @@
       if (endMemory) {
         $('#Memory').hide()
         $('#Game').show()
+        setTimeout(() => {
+          $('#Game .imgAvatar').css({'top': '20px', 'left': '134px'})
+        }, 500);
+        nextStore()
+        setTimeout(() => {
+          $('#Game').hide()
+          $('#Store').fadeIn()
+        }, 2000);
+        setTimeout(() => {
+          if ($(".successful").length == cards_memory.length) {
+            $('#pig').attr('src', 'assets/img/alcancia/cerdolleno.png');
+            $('#pig').addClass('animate__tada')
+            soundMoney.play()
+            $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
+          }
+          $(".start_button").removeClass("hidden");
+          $(".start_button").prop("disabled", true);
+          endMemory = false
+          $(".game_message").removeClass("ani2")
+          $(".game_message").addClass("ani")
+        }, 100);
       }
     }, 500);
 
@@ -150,14 +172,15 @@
     $('.result').text(" Encuentra el anverso y reverso de cada billete antes de que se termine el tiempo. Haz clic en el botón de iniciar para empezar a jugar.");
   }
   function successfulMessage(){
-    addAudios(okAudio);
+    soundCorrect.play()
     $(".game_message").css("display","block");
     $('.result').text("¡Muy bien! has ganado Bs. 200.000");
+    money.pig = money.pig + 2
     endMemory = true
   }
   function failedMessage(){
     $(".card").toggleClass("locked");
-    addAudios(errorAudio);
+    soundError.play()
     $(".game_message").css("display","block");
     $('.result').text("No pudiste terminar a tiempo. No haz ganado el bono.");
     endMemory = true
@@ -172,9 +195,4 @@
         var seg = s<=9?'0'+s:s;
           document.getElementById("timer").innerHTML =  seg;
     },1000);
-  }
-   function addAudios (type) {
-    type.currentTime = 0;
-    type.play();
-    type.volume = 0.5;
   }

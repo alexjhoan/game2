@@ -71,6 +71,7 @@ function nextAvatar() {
 
 function nextAwards() {
   $('#Avatar').hide()
+  $('#Store').hide()
   $('#Awards .imgAvatar').load(`assets/icons/${settingChild.gameChild}.svg`);
   setTimeout(() => {
     $('#Awards .imgAvatar .hair').attr('fill', settingChild.hair);
@@ -80,6 +81,20 @@ function nextAwards() {
     $(`#Awards .imgAvatar`).show();
     $('#Awards').show()
   }, 80);
+  varGame = {
+    numberRoulette: 1,
+    avatarPosition: 34,
+    oldAvatarPosition: 34
+  }
+  randomCard = {
+    typeCard: 0,
+    new: [0,0,0,0,0],
+    old:[[],[],[],[],[]]
+  }
+  $('#Game .imgAvatar').css({'top': avatarTable[varGame.oldAvatarPosition].top+'px', 'left': avatarTable[varGame.oldAvatarPosition].left+'px'})
+  $('.ribbon p.mount').addClass('hide')
+  s = 40
+  $('#board').text('')
 }
 
 function nextGame() {
@@ -101,12 +116,24 @@ function nextGame() {
 
 function nextMemory() {
   $('#Game').hide()
-  $('#Memory').show()
+  $('#Memory').fadeIn()
   welcomeMessage();
   document.getElementById('timer').innerHTML = s;
 
   loadMemoryCards()
 
+}
+
+function nextStore() {
+  $('#Store .imgAvatar').load(`assets/icons/${settingChild.gameChild}.svg`);
+  setTimeout(() => {
+    $('#Store .imgAvatar .hair').attr('fill', settingChild.hair);
+    $('#Store .imgAvatar .skin').attr('fill', settingChild.skin);
+    $('#Store .imgAvatar .shirt').attr('fill', settingChild.clothes.shirt);
+    $('#Store .imgAvatar .pants').attr('fill', settingChild.clothes.pants);
+    $('#Store .imgAvatar').show();
+  }, 80);
+  $('#Store .mount p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
 }
 
 
@@ -118,19 +145,3 @@ function showCards(params) {
 function showRoulette(params) {
   $('#Roulette').load('components/Roulette.html');
 }
-
-function showAvatar(params) {
-  $('#Store .imgAvatar').load(`assets/icons/${settingChild.gameChild}.svg`);
-  setTimeout(() => {
-    $('#Store .imgAvatar .hair').attr('fill', settingChild.hair);
-    $('#Store .imgAvatar .skin').attr('fill', settingChild.skin);
-    $('#Store .imgAvatar .shirt').attr('fill', settingChild.clothes.shirt);
-    $('#Store .imgAvatar .pants').attr('fill', settingChild.clothes.pants);
-  }, 15);
-  setTimeout(() => {
-    $('#Store .imgAvatar').show();
-  }, 30);
-
-  $('#Store .mount p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
-}
-

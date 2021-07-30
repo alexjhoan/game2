@@ -109,8 +109,7 @@ function hideCards(colorCard) {
     $('#ModalBg').fadeOut()
   }, 400);
 
-  $('#pig').removeClass('animate__tada')
-  $('#pig').removeClass('animate__headShake')
+  $('#pig').removeClass('animate__tada animate__headShake')
 
   if (randomCard.typeCard === 1) {
     setTimeout(() => {
