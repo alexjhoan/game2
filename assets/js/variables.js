@@ -5,7 +5,7 @@
 // IMPORTANTE: no quitar el 1 antes de los ceros ya que funciona como multiplicador
 
 let money = {
-  ceros: 100000,
+  ceros: 100,
   blueCard: [0,1,2,3,4,5,6,7,8,9],
   greenCard: [0, 1.5, 2.5, 6, 7, 8, 3],
   pig: 2
@@ -37,8 +37,8 @@ let settingChild = {
 
 let varGame = {
   numberRoulette: 1,
-  avatarPosition: 34,
-  oldAvatarPosition: 34
+  avatarPosition: 0,
+  oldAvatarPosition: 0
 }
 
 const gameBox = [0,1,0,0,4,0,2,3,0,0,0,4,0,2,0,1,4,0,0,1,3,0,2,0,4,0,0,0,3,0,1,0,2,0,3,0,2,0,1,4,5]
