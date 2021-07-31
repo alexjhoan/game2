@@ -83,8 +83,8 @@ function nextAwards() {
   }, 80);
   varGame = {
     numberRoulette: 1,
-    avatarPosition: 34,
-    oldAvatarPosition: 34
+    avatarPosition: 0,
+    oldAvatarPosition: 0
   }
   randomCard = {
     typeCard: 0,

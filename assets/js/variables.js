@@ -38,14 +38,14 @@ let settingChild = {
 
 let varGame = {
   numberRoulette: 1,
-  avatarPosition: 34,
-  oldAvatarPosition: 34
+  avatarPosition: 0,
+  oldAvatarPosition: 0
 }
 
 const gameBox = [0,1,0,0,4,0,2,3,0,0,0,4,0,2,0,1,4,0,0,1,3,0,2,0,4,0,0,0,3,0,1,0,2,0,3,0,2,0,1,4,5]
 
 const avatarTable = [
-  {top: 203, left: 686},
+  {top: 306, left: 686},
   {top: 251, left: 556},
   {top: 255, left: 481},
   {top: 259, left: 406},
