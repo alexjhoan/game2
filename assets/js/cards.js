@@ -51,6 +51,7 @@ function viewCard(colorCard, arrayCard) {
 }
 
 function response(valid) {
+  clearTimeout(timerId);
   const feedbacks =  cards[randomCard.typeCard][randomCard.new[randomCard.typeCard]].feedback
   const profit = ' Has ganado Bs. ' + (money.blueCard[feedbacks.indexMoney] * money.ceros).toLocaleString() + '.'
   const greenCard = money.greenCard[feedbacks.indexMoney]

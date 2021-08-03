@@ -655,14 +655,14 @@ section > div {
 /* game Mount */
 
 #Game .mountPig {
-  top: 140px;
-  right: 128px;
+  top: 142px;
+  right: 127px;
   position: absolute;
 }
 
 #Game .mountPig p{
   color: var(--secondary);
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
 }
 
@@ -693,8 +693,8 @@ section > div {
 
 #Game .mount{
   margin-top: -43px;
-  font-size: 13px;
-  margin-left: 5px;
+  font-size: 12px;
+  margin-left: 7px;
 }
 
 #Game .hide{
@@ -964,7 +964,7 @@ section > div {
   height: 175px;
   border-radius: 100%;
   overflow: hidden;
-  transition: all ease 2.5s;
+  transition: all ease 2.7s;
   z-index: 1;
 }
 

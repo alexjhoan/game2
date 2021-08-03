@@ -111,7 +111,7 @@ function nextGame() {
     $('#Game').show()
   }, 80);
   $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
-  rouletteDimer(5000)
+  rouletteDimer(8000)
 }
 
 function nextMemory() {
