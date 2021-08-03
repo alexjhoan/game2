@@ -12,6 +12,13 @@ let money = {
   pig: 2
 }
 
+let mountAwards = {
+  bici: 48,
+  dog: 25,
+  laptop: 50,
+  phone: 30,
+}
+
 // NOTE: cartas (typeCard) segun el array:
 
 // 0 = blueCards
@@ -39,7 +46,8 @@ let settingChild = {
 let varGame = {
   numberRoulette: 1,
   avatarPosition: 0,
-  oldAvatarPosition: 0
+  oldAvatarPosition: 0,
+  toWin: '',
 }
 
 const gameBox = [0,1,0,0,4,0,2,3,0,0,0,4,0,2,0,1,4,0,0,1,3,0,2,0,4,0,0,0,3,0,1,0,2,0,3,0,2,0,1,4,5]
