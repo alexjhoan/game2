@@ -22,10 +22,8 @@ function spinner() {
   $('.contanerRoulette').css('transform', 'rotate('+deg+'deg)')
   setTimeout(() => {
     $('.contanerRoulette').css('transition', 'none')
-    setTimeout(() => {
-      $('.contanerRoulette').css('transform', 'rotate('+numero+'deg)')
-    }, 80);
-  }, 2900);
+    $('.contanerRoulette').css('transform', 'rotate('+numero+'deg)')
+  }, 3000);
 
   if (numero > 30 && numero <= 90) {
     varGame.numberRoulette = 6

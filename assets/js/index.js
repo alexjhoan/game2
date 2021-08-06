@@ -72,7 +72,6 @@ function nextAvatar() {
 function nextAwards() {
   $('#Avatar').hide()
   $('#Store').hide()
-  addMounts()
   $('#Awards .imgAvatar').load(`assets/icons/${settingChild.gameChild}.svg`);
   setTimeout(() => {
     $('#Awards .imgAvatar .hair').attr('fill', settingChild.hair);
@@ -82,6 +81,20 @@ function nextAwards() {
     $(`#Awards .imgAvatar`).show();
     $('#Awards').show()
   }, 80);
+  varGame = {
+    numberRoulette: 1,
+    avatarPosition: 0,
+    oldAvatarPosition: 0
+  }
+  randomCard = {
+    typeCard: 0,
+    new: [0,0,0,0,0],
+    old:[[],[],[],[],[]]
+  }
+  $('#Game .imgAvatar').css({'top': avatarTable[varGame.oldAvatarPosition].top+'px', 'left': avatarTable[varGame.oldAvatarPosition].left+'px'})
+  $('.ribbon p.mount').addClass('hide')
+  s = 40
+  $('#board').text('')
 }
 
 function nextGame() {
@@ -98,7 +111,7 @@ function nextGame() {
     $('#Game').show()
   }, 80);
   $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
-  rouletteDimer(8000)
+  rouletteDimer(5000)
 }
 
 function nextMemory() {
@@ -121,7 +134,6 @@ function nextStore() {
     $('#Store .imgAvatar').show();
   }, 80);
   $('#Store .mount p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
-  messageStore()
 }
 
 
