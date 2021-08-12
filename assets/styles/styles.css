@@ -16,24 +16,30 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: BBVA;
   color: var(--text);
   font-weight: 500;
+
+  user-select: none;
 }
 
 div,input,button,textarea{
   font-family: BBVA;
   color: var(--text-secondary);
   font-weight: 500;
+  user-select: none;
 }
 
 span{
   font-weight: 500;
+  user-select: none;
 }
 
 a, p{
   font-weight: 500;
+  user-select: none;
 }
 
 img {
   max-width: 100%;
+  user-select: none;
 }
 
 section{
@@ -46,12 +52,14 @@ section{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
+  user-select: none;
 }
 
 
 section > div {
   width: 100%;
   height: 100%;
+  user-select: none;
 }
 
 .btn.btn-primary {
@@ -70,6 +78,13 @@ section > div {
   box-shadow: none!important;
   color: var(--primary);
 }
+
+.disabled{
+  opacity: 0.4;
+  user-select: none;
+  pointer-events: none;
+}
+
 /*----------------------------Start-------------------------------*/
 .box{
     padding: 0;
@@ -578,7 +593,7 @@ section > div {
   border: dotted 4px var(--third);
 }
 
-#Awards .gridImages img{
+#Awards .gridImages img, #Store .gridImages img{
   height: 85px;
   width: auto;
   position: relative;
@@ -655,14 +670,14 @@ section > div {
 /* game Mount */
 
 #Game .mountPig {
-  top: 140px;
-  right: 128px;
+  top: 142px;
+  right: 127px;
   position: absolute;
 }
 
 #Game .mountPig p{
   color: var(--secondary);
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
 }
 
@@ -693,8 +708,8 @@ section > div {
 
 #Game .mount{
   margin-top: -43px;
-  font-size: 13px;
-  margin-left: 5px;
+  font-size: 12px;
+  margin-left: 7px;
 }
 
 #Game .hide{
@@ -964,7 +979,7 @@ section > div {
   height: 175px;
   border-radius: 100%;
   overflow: hidden;
-  transition: all ease 2.5s;
+  transition: all cubic-bezier(0, 0, 0.5, 1) 2.7s;
   z-index: 1;
 }
 
@@ -1101,15 +1116,48 @@ section > div {
   position: absolute;
   right: 0;
   left: 0;
-  top: 90px;
+  top: 80px;
   width: 750px;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 25px 0;
+  padding: 30px;
+}
+#Store .gridImages .premio{
+  position: relative;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
 }
 
+#Store .gridImages .premio.active:before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 115px;
+  width: 115px;
+  border-radius: 100%;
+  background-color: var(--secondary);
+  z-index: 1;
+}
+
+#Store .gridImages .premio.active:after{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 135px;
+  width: 135px;
+  border-radius: 100%;
+  z-index: 1;
+  border: dotted 4px var(--secondary);
+}
+
+
 #Store .continerPrice {
-  top: 260px;
+  top: 230px;
   position: absolute;
   width: 725px;
   right: 0;
@@ -1125,31 +1173,34 @@ section > div {
 
 #Store .box{
 position: absolute;
-bottom:  95px;
-left: 20px;
+top: 370px;
+left: 35px;
 border: 5px solid #3449aa;
 box-shadow: 0px 0px 10px #000;
 border-radius: 15px;
-width: 415px;
+width: 430px;
 
 }
 
 #Store .positivemessage{
-
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--primary);
   background: #ffffff;
   overflow: hidden;
   border: 5px solid var(--primary);
   border-radius: 10px;
   padding: 10px;
+}
+
+#Store .positivemessage p{
+  font-size: 1rem;
+  color: var(--primary);
   text-align: justify;
+  line-height: 1.4;
+  margin-bottom: 0;
 }
 
 #Store .spare{
   position: absolute;
-  bottom:  245px;
+  top: 315px;
   left: 35px;
   background:  var(--primary);
   font-size: 14px;
@@ -1157,7 +1208,7 @@ width: 415px;
   color:#ffffff;
   border: 5px  #3449aa;
   border-radius: 30px;
-  padding: 5px;
+  padding: 5px 10px;
   width: 280px;
   text-align: left;
   height: 30px;

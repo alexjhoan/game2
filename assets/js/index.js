@@ -20,6 +20,7 @@ const getAudios = () => {
   soundCorrect = new Audio('assets/sounds/correct.mp3');
   soundMoney = new Audio('assets/sounds/money.mp3');
   soundFlipCardMemory = new Audio('assets/sounds/flipcard.mp3');
+  soundTick = new Audio('assets/sounds/tick.mp3');
   soundBlop = new Audio('assets/sounds/blop.mp3');
   soundShowCard.playbackRate = 1.2;
   soundFlipCardGame.playbackRate = 0.9;
@@ -71,7 +72,7 @@ function nextAvatar() {
 
 function nextAwards() {
   $('#Avatar').hide()
-  $('#Store').hide()
+  addMounts()
   $('#Awards .imgAvatar').load(`assets/icons/${settingChild.gameChild}.svg`);
   setTimeout(() => {
     $('#Awards .imgAvatar .hair').attr('fill', settingChild.hair);
@@ -81,27 +82,13 @@ function nextAwards() {
     $(`#Awards .imgAvatar`).show();
     $('#Awards').show()
   }, 80);
-  varGame = {
-    numberRoulette: 1,
-    avatarPosition: 0,
-    oldAvatarPosition: 0
-  }
-  randomCard = {
-    typeCard: 0,
-    new: [0,0,0,0,0],
-    old:[[],[],[],[],[]]
-  }
-  $('#Game .imgAvatar').css({'top': avatarTable[varGame.oldAvatarPosition].top+'px', 'left': avatarTable[varGame.oldAvatarPosition].left+'px'})
-  $('.ribbon p.mount').addClass('hide')
-  s = 40
-  $('#board').text('')
 }
 
 function nextGame() {
   $('#Awards').hide()
   $('#Roulette').load('components/Roulette.html');
   $('#Game .imgAvatar').load(`assets/icons/${settingChild.gameChild}.svg`);
-  selectaward();
+  soundRouletteLoad()
   setTimeout(() => {
     $('#Game .imgAvatar .hair').attr('fill', settingChild.hair);
     $('#Game .imgAvatar .skin').attr('fill', settingChild.skin);
@@ -111,7 +98,8 @@ function nextGame() {
     $('#Game').show()
   }, 80);
   $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
-  rouletteDimer(5000)
+  $('.containerwhiteribbon .mount span').text((mountAwards[varGame.toWin] * money.ceros).toLocaleString());
+  rouletteDimer(10000)
 }
 
 function nextMemory() {
@@ -133,7 +121,7 @@ function nextStore() {
     $('#Store .imgAvatar .pants').attr('fill', settingChild.clothes.pants);
     $('#Store .imgAvatar').show();
   }, 80);
-  $('#Store .mount p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
+  messageStore()
 }
 
 

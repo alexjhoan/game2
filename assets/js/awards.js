@@ -1,25 +1,21 @@
+function addMounts() {
+  let impMount = Object.entries(mountAwards).map(([key, value]) => {
+    return (
+      `<p data-id=${key}>Bs. ${(value*money.ceros).toLocaleString()}</p>`
+    )
+  })
+  $('#Awards .continerPrice').append(impMount)
+  $('#Store .continerPrice').append(impMount)
+  varGame.wonObj.map(premio =>{
+    $(`#Awards .containerselectAward .premio[data-id=${premio}]`).addClass('disabled')
+    $(`#Awards .continerPrice p[data-id=${premio}]`).addClass('disabled')
+  })
+}
+
 function awardsActive(active) {
   $('.containerselectAward .premio.active').removeClass('active')
   $(active).addClass('active')
-
+  varGame.toWin = active.dataset.id
   $("#selectedAward").removeAttr("disabled");
 }
-
-function selectaward() {
-  var Selet = $('.containerselectAward .premio.active').attr('data-value');
-  if (Selet==1) {
-    $("#bici").removeClass('hide');
-  }
-  else if (Selet==2) {
-    $("#perro").removeClass('hide');
-  }
-  else if (Selet==3) {
-    $("#laptop").removeClass('hide');
-  }
-
-  else if (Selet==4) {
-    $("#cel").removeClass('hide');
-  }
-
-  }
 

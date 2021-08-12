@@ -22,6 +22,7 @@ function randomCardFunction(arrayCard) {
 }
 
 function viewCard(colorCard, arrayCard) {
+  clearTimeout(timerId);
   randomCard.typeCard = arrayCard
   randomCardFunction(arrayCard)
   soundShowCard.play();
@@ -100,6 +101,7 @@ function response(valid) {
 }
 
 function hideCards(colorCard) {
+  $("#rouletteSpin").removeAttr("disabled");
   $(`.${colorCard}`).removeClass('showCard');
   setTimeout(() => {
     $(`.${colorCard}`).removeClass('selectCard');
@@ -112,9 +114,14 @@ function hideCards(colorCard) {
   $('#pig').removeClass('animate__tada animate__headShake')
 
   if (randomCard.typeCard === 1) {
+    $("#rouletteSpin").prop("disabled", true);
+    clearTimeout(timerId);
     setTimeout(() => {
       $($('#Game .imgAvatar')).css({'top': avatarTable[varGame.avatarPosition].top+'px', 'left': avatarTable[varGame.avatarPosition].left+'px'});
     }, 1100);
+    setTimeout(() => {
+      $("#rouletteSpin").removeAttr("disabled");
+    }, 2000);
     setTimeout(() => {
       let viewCardColor
 
@@ -134,6 +141,8 @@ function hideCards(colorCard) {
         varGame.oldAvatarPosition = varGame.oldAvatarPosition + 1
       }
     }, 2000);
+  } else {
+    rouletteDimer(10000)
   }
   soundFlipCardGame.play();
 
@@ -143,18 +152,20 @@ function hideCards(colorCard) {
       $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
       $('#pig').attr('src', 'assets/img/alcancia/cerdolleno.png');
       $('#pig').addClass('animate__tada')
+      setTimeout(() => {
+        $('#pig').attr('src', 'assets/img/alcancia/cerdofeliz.png');
+      }, 1500);
       addMoney = false
     }, 1100);
   } else {
     setTimeout(() => {
       $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
-      $('#pig').attr('src', 'assets/img/alcancia/cerdofeliz.png');
       $('#pig').addClass('animate__headShake')
     }, 1100);
   }
 
 
-  rouletteDimer(10000)
+
 
   // funcion para que se muestre una a una.... eliminar despues
   // if (randomCard.new[randomCard.typeCard] > cards[randomCard.typeCard].length) {
