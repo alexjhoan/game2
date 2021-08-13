@@ -4,7 +4,7 @@ function messageStore() {
   $(`#Store .premio[data-id=${varGame.toWin}]`).addClass('active')
   $('#Store .mount p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
   if (money.pig >= mountAwards[varGame.toWin]) {
-    $('#Store .positivemessage p').text('¡Felicidades! Has logrado ahorrar la cantidad suficiente para comprar lo que querías. Si te sobra sobra dinero continúa ahorrándolo.');
+    $('#Store .positivemessage p').text('¡Felicidades! Has logrado ahorrar la cantidad suficiente para comprar lo que querías. Si te sobra dinero continúa ahorrándolo.');
     $(`#Store .premio[data-id=${varGame.toWin}]`).removeClass('disabled')
     $(`#Store .continerPrice p:not([data-id=${varGame.toWin}])`).addClass('disabled')
     varGame.wonObj.push(varGame.toWin)

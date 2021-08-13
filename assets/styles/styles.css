@@ -638,7 +638,7 @@ section > div {
 /*----------------------------Game-------------------------------*/
 
 #Game{
-  background-image: url(../img/tableGame.png);
+  background-image: url(../img/tableGame.svg);
 }
 
 #Game .imgAvatar{
@@ -1087,18 +1087,14 @@ section > div {
 #Roulette .bgTooltip {
   width: 250px;
   position: absolute;
-  top: -150px;
-  right: -150px;
-  background-color: #322b9a;
-  padding: 12px;
-  border-radius: 10px;
-}
-
-#Roulette .tooltipRoulette {
-  padding: 8px 15px;
-  border: dashed 3px var(--primary);
-  border-radius: 10px;
-  background-color: #c0dcea;
+  top: -110px;
+  right: -200px;
+  padding: 14px 22px 30px;
+  background-image: url(../images/bgmsn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 5;
 }
 
 #Roulette .tooltipRoulette span {
@@ -1179,7 +1175,7 @@ border: 5px solid #3449aa;
 box-shadow: 0px 0px 10px #000;
 border-radius: 15px;
 width: 430px;
-
+z-index: 2;
 }
 
 #Store .positivemessage{
@@ -1230,20 +1226,27 @@ width: 430px;
   padding-right: 6px;
 }
 
-#Store .playbutton{
-  width: 40%;
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    color:#004DA8!important;
-    padding: 0!important;
-    vertical-align: middle;
-    position: absolute;
-    z-index: 1;
-    bottom: 5%;
-    text-align: left;
-    margin-left: 10%;
+#Store img.btnNextGame {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 415px;
+  height: auto;
+}
 
+#Store .playbutton{
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  left: 30px;
+}
+
+#Store .playbutton button{
+  font-size: 1.8rem;
+  border:none;
+  background: none;
+  color: var(--primary);
 }
 
 #Store .negrita{
@@ -1349,7 +1352,10 @@ button:focus{
   transform-style: preserve-3d;
 }
 .cardBox.cardfront {
-  background: url(../img/memory/reverso.png);
+  background: url(../img/memory/reverso.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
   }
 .cardBox {
   position: absolute;
@@ -1416,17 +1422,16 @@ button:focus{
 }
 .btn_endgame{
     float: right;
-    margin-top: -7%;
-    margin-right: -7%;
+    margin-top: -8%;
+    margin-right: -8%;
     height: 24px;
     width: 24px;
     border: none;
-    background: #3aa4dc;
-    border-radius: 50%;
-    color: #006ec1;
+    background: transparent;
     font-weight: bold;
     cursor: pointer;
     transition: transform .2s;
+    padding: 0;
 }
 .btn_endgame:hover{
   transform: scale(1.2);

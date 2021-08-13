@@ -1,5 +1,4 @@
 let timerId
-
 function soundRouletteLoad() {
   try{
     window.AudioContext = window.AudioContext || window.webkitAudioContext
@@ -9,27 +8,19 @@ function soundRouletteLoad() {
     console.log('navegador no compatible con el audio')
   }
 }
-
 function soundRoulette() {
-
   const stopAudio = audioContext.createGain();
-
   let bandpass = audioContext.createBiquadFilter()
   bandpass.type = "bandpass"
   bandpass.frequency.value = 9e3
-
   let highpass = audioContext.createBiquadFilter()
   highpass.type = "highpass"
   highpass.frequency.value = 4500
-
   let lowpass = audioContext.createBiquadFilter()
   lowpass.type = "lowpass"
   lowpass.frequency.value = 2500
-
   let oscillators = []
-
   const audios = [2, 3, 4.16, 5.43, 6.79, 8.21]
-
   audios.forEach((t) => {
     const e = audioContext.createOscillator();
     e.type = "square"
@@ -39,28 +30,12 @@ function soundRoulette() {
   })
   stopAudio.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.06)
   stopAudio.gain.setValueAtTime(1, audioContext.currentTime)
-
   oscillators.forEach((t) => t.connect(bandpass))
   bandpass.connect(highpass).connect(lowpass).connect(stopAudio).connect(audioContext.destination);
-
   oscillators.forEach((t) => {
     t.start(audioContext.currentTime + 0.01)
     t.stop(audioContext.currentTime + 0.07)
   });
-}
-
-function tick() {
-  soundTick.play()
-
-  // let date = Date.now()
-
-  // let date2 = Intl.DateTimeFormat("es-ES").format(date);
-
-  // let myDate = Date.now("12/08/2021")
-
-  // console.log(myDate)
-  // console.log(date)
-  // console.log(date2)
 }
 
 function rouletteDimer(time) {
@@ -68,7 +43,6 @@ function rouletteDimer(time) {
     $('#RouletteTooltip').show()
   }, time);
 }
-
 
 function spinner() {
   $("#rouletteSpin").prop("disabled", true);
