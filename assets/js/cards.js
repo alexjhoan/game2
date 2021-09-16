@@ -142,7 +142,7 @@ function hideCards(colorCard) {
       }
     }, 2000);
   } else {
-    rouletteDimer(10000)
+    rouletteDimer(6000)
   }
   soundFlipCardGame.play();
 
@@ -163,16 +163,4 @@ function hideCards(colorCard) {
       $('#pig').addClass('animate__headShake')
     }, 1100);
   }
-
-
-
-
-  // funcion para que se muestre una a una.... eliminar despues
-  // if (randomCard.new[randomCard.typeCard] > cards[randomCard.typeCard].length) {
-  //   alert('no hay mas cartas de este color')
-  // } else {
-  //   randomCard.new[randomCard.typeCard] ++
-  // }
-
-  // console.log(randomCard)
 }

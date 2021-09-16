@@ -6,7 +6,7 @@
 // IMPORTANTE: no quitar el 1 antes de los ceros ya que funciona como multiplicador
 
 let money = {
-  ceros: 100000,
+  ceros: 100,
   blueCard: [0,1,2,3,4,5,6,7,8,9],
   greenCard: [0, 1.5, 2.5, 6, 7, 8, 3],
   pig: 2

@@ -11,3 +11,21 @@ function moveAvatar(position) {
   }
   loop()
 }
+
+function playVideo() {
+  $("#pigVideo").attr("src", "assets/video/video.gif")
+  $("#pigVideo").show()
+  $("#pig").hide()
+  setTimeout(() => {
+    soundPig.play()
+  }, 650);
+  setTimeout(() => {
+    $("#breakpig").show()
+    $("#pigVideo").hide()
+    $("#pigVideo").attr("src", "")
+    setTimeout(() => {
+      soundPig.pause()
+      soundPig.currentTime = 0;
+    }, 125);
+  }, 1500);
+}

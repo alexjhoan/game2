@@ -1,11 +1,3 @@
-$(window).on('load', function () {
-  $('body').css('opacity', '1');
-  setTimeout(() => {
-    $('#loaderContainer').fadeOut()
-    $('#cont').show()
-  }, 1500);
-});
-
 // ------------------init-load---------------------
 
 const getCards = async() => {
@@ -22,6 +14,7 @@ const getAudios = () => {
   soundFlipCardMemory = new Audio('assets/sounds/flipcard.mp3');
   soundTick = new Audio('assets/sounds/tick.mp3');
   soundBlop = new Audio('assets/sounds/blop.mp3');
+  soundPig = new Audio('assets/sounds/cash.mp3');
   soundShowCard.playbackRate = 1.2;
   soundFlipCardGame.playbackRate = 0.9;
 }
@@ -60,6 +53,11 @@ $(document).ready(function() {
   setTimeout(() => {
     $('#Cards').load('components/Cards.html');
   }, 300);
+  $('body').css('opacity', '1');
+  setTimeout(() => {
+    $('#loaderContainer').fadeOut()
+    $('#cont').show()
+  }, 1500);
 });
 
 // --------------change-screen-----------
@@ -99,7 +97,7 @@ function nextGame() {
   }, 80);
   $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
   $('.containerwhiteribbon .mount span').text((mountAwards[varGame.toWin] * money.ceros).toLocaleString());
-  rouletteDimer(10000)
+  rouletteDimer(6000)
 }
 
 function nextMemory() {
@@ -107,9 +105,7 @@ function nextMemory() {
   $('#Memory').fadeIn()
   welcomeMessage();
   document.getElementById('timer').innerHTML = s;
-
   loadMemoryCards()
-
 }
 
 function nextStore() {
@@ -122,14 +118,4 @@ function nextStore() {
     $('#Store .imgAvatar').show();
   }, 80);
   messageStore()
-}
-
-
-// funciones de prueba
-function showCards(params) {
-  $('#Cards').load('components/Cards.html');
-}
-
-function showRoulette(params) {
-  $('#Roulette').load('components/Roulette.html');
 }

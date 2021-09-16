@@ -23,7 +23,8 @@ function newGame() {
   $('#Store .continerPrice').text('')
   $("#selectedAward").prop("disabled", true);
   $(`#Awards .containerselectAward .premio.active`).removeClass('active')
-  $('#pig').attr('src', 'assets/img/alcancia/cerdofeliz.png');
+  $("#breakpig").hide()
+  $("#pig").show()
   setTimeout(() => {
     $('#Awards .imgAvatar .hair').attr('fill', settingChild.hair);
     $('#Awards .imgAvatar .skin').attr('fill', settingChild.skin);

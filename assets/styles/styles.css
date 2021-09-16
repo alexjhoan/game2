@@ -222,7 +222,7 @@ section > div {
     width: 185px;
     height: 165px;
     position: absolute;
-    margin-top: -3%;
+    margin-top: -6%;
     z-index: 1;
 }
 
@@ -638,7 +638,7 @@ section > div {
 /*----------------------------Game-------------------------------*/
 
 #Game{
-  background-image: url(../img/tableGame.svg);
+  background-image: url(../img/tableGame.png);
 }
 
 #Game .imgAvatar{
@@ -655,16 +655,30 @@ section > div {
 
 /* piggybank */
 
-#Game .containerpiggybank{
+#Game #pig{
+  width: 75px;
+  height: auto;
   position: absolute;
-  bottom: 470px;
-  right: 133px;
-  width: 70px;
+  right: 132px;
+  bottom: 473px;
 }
 
-#Game #pig{
-  width: 100%;
+/* piggiVideo */
+
+#Game #pigVideo{
+  width: 151px;
   height: auto;
+  position: absolute;
+  right: 118px;
+  bottom: 469px;
+}
+
+#Game #breakpig {
+  width: 95px;
+  height: auto;
+  position: absolute;
+  right: 122px;
+  bottom: 475px;
 }
 
 /* game Mount */
@@ -698,7 +712,6 @@ section > div {
   top: 3px;
   right: 5px;
   margin-top: 75px;
-
 }
 
 #Game .ribbon{

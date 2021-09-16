@@ -60,7 +60,7 @@
         '" style="background-image: url(' +
         cards_memory[i].image +
         ');"/></div>' +
-        "></div></div>"
+        "</div></div>"
       );
       boardElements.appendTo("#board");
     }
@@ -81,7 +81,6 @@
       secondOpenCard = "";
     }
 
-
     function flipCard(itemCard) {
       $(itemCard).toggleClass("flipCard");
         if (turn == 0) {
@@ -93,16 +92,13 @@
         secondOpenCard = $(itemCard)
           .find(".image")
           .data("type");
-
         if (secondOpenCard === firstOpenCard) {
             soundCorrect.play()
            $(".flipCard").addClass("successful");
            setTimeout(() => {
              $(".flipCard").addClass("hidden");
            }, 400);
-
            reset();
-
           if ($(".successful").length == cards_memory.length) {
             clearInterval(gameTimer);
             setTimeout(function() {
@@ -125,7 +121,6 @@
     $(".game_message").css("display","none");
     $(".game_message").removeClass("ani ani2")
      tiempo();
-
     $('#pig').removeClass('animate__tada animate__headShake')
   }
 
@@ -142,18 +137,16 @@
         $('#Game').show()
         setTimeout(() => {
           $('#Game .imgAvatar').css({'top': '20px', 'left': '134px'})
-        }, 500);
+        }, 2000);
         nextStore()
         setTimeout(() => {
           $('#Game').hide()
           $('#Store').fadeIn()
-        }, 2000);
+        }, 3800);
         setTimeout(() => {
           if ($(".successful").length == cards_memory.length) {
-            $('#pig').attr('src', 'assets/img/alcancia/cerdolleno.png');
-            $('#pig').addClass('animate__tada')
-            soundMoney.play()
             $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
+            playVideo()
           }
           $(".start_button").removeClass("hidden");
           $(".start_button").prop("disabled", true);
@@ -174,7 +167,7 @@
   function successfulMessage(){
     soundCorrect.play()
     $(".game_message").css("display","block");
-    $('.result').text("¡Muy bien! has ganado Bs. 200.000");
+    $('.result').text("¡Muy bien! has ganado Bs. 200");
     money.pig = money.pig + 2
     endMemory = true
   }

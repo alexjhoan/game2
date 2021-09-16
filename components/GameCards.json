@@ -89,14 +89,14 @@
       }
     },
     {
-      "text": "La tía Daniela quiere comprar el cuadro de un artista que cuesta Bs. 500.000 para el día de su cumpleaños, pero ella no tiene suficiente dinero. ¿Qué puede hacer? ",
+      "text": "La tía Daniela quiere comprar el cuadro de un artista que cuesta Bs. 500 para el día de su cumpleaños, pero ella no tiene suficiente dinero. ¿Qué puede hacer? ",
       "options":[
         {
           "text": "Desistir de comprar el cuadro por no tener el dinero",
           "valid": false
         },
         {
-          "text": "Crear un plan para ahorrar los Bs. 500.000 e ir a comprar el cuadro.",
+          "text": "Crear un plan para ahorrar los Bs. 500 e ir a comprar el cuadro.",
           "valid": true
         },
         {
@@ -327,7 +327,7 @@
       }
     },
     {
-      "text": "Alejandro tenía Bs. 500.000 y gastó Bs. 350.000. Rodolfo tenía Bs. 350.000 y gastó Bs. 100.000. ¿Quién tiene más dinero ahora?",
+      "text": "Alejandro tenía Bs. 500 y gastó Bs. 350. Rodolfo tenía Bs. 350 y gastó Bs. 100. ¿Quién tiene más dinero ahora?",
       "options":[
         {
           "text": "Rodolfo.",
@@ -631,7 +631,7 @@
       }
     },
     {
-      "text": "María y Amalia reciben de mesada la misma cantidad; ambas desean ahorrar para comprarse un vestido de Bs. 600.000. Amalia planifica ahorrar Bs. 100.000 mensuales y María planifica ahorrar Bs. 120.000 bi-mensuales (cada dos meses). ¿Quién se podrá comprar el vestido primero?",
+      "text": "María y Amalia reciben de mesada la misma cantidad; ambas desean ahorrar para comprarse un vestido de Bs. 600. Amalia planifica ahorrar Bs. 100 mensuales y María planifica ahorrar Bs. 120 bi-mensuales (cada dos meses). ¿Quién se podrá comprar el vestido primero?",
       "options":[
         {
           "text": "Amalia.",
@@ -643,8 +643,8 @@
         }
       ],
       "feedback": {
-        "positive": "¡Así es! Amalia logrará ahorrar los Bs. 600.000 en 6 meses, mientras que María logrará ahorrarlos en 10 meses.",
-        "negative": "María logrará ahorrar los Bs. 600.000 en 10 meses porque sólo está ahorrando Bs. 60.000 mensual. Mientras que Amalia los ahorrará en 6 meses. No has ganado dinero.",
+        "positive": "¡Así es! Amalia logrará ahorrar los Bs. 600 en 6 meses, mientras que María logrará ahorrarlos en 10 meses.",
+        "negative": "María logrará ahorrar los Bs. 600 en 10 meses porque sólo está ahorrando Bs. 60 mensual. Mientras que Amalia los ahorrará en 6 meses. No has ganado dinero.",
         "indexMoney": 8
       }
     },
@@ -982,7 +982,7 @@
       }
     },
     {
-      "text": "La tía Celia te permite recoger las mazanas de su patio para que las puedas vender. Puedes ahorrar tiempo si las recoges del suelo, pero la calidad no es tan buena. Tú decides escoger las manzanas de.... ",
+      "text": "La tía Celia te permite recoger las mazanas de su patio para que las puedas vender. Puedes ahorrar tiempo si las recoges del suelo, pero la calidad no es tan buena. Tú decides escoger las manzanas de... ",
       "options":[
         {
           "text": "Los árboles",
@@ -1005,11 +1005,11 @@
       "text": "Estás en la cantina del colegio porque no llevaste desayuno. ¿Qué te comprarías?.",
       "options":[
         {
-          "text": "Pastel de queso (Bs. 12.000).",
+          "text": "Pastel de queso (Bs. 12).",
           "valid": true
         },
         {
-          "text": "Arepa de queso (Bs. 25.000).",
+          "text": "Arepa de queso (Bs. 25).",
           "valid": false
         }
       ],
@@ -1028,11 +1028,11 @@
       "text": "Necesitas comprarte un cuaderno para el colegio. ¿Cuál te comprarías?.",
       "options":[
         {
-          "text": "Cuaderno con calcomanías (Bs. 120.000).",
+          "text": "Cuaderno con calcomanías (Bs. 120).",
           "valid": false
         },
         {
-          "text": "Cuaderno sencillo (Bs. 80.000).",
+          "text": "Cuaderno sencillo (Bs. 80).",
           "valid": true
         }
       ],
@@ -1051,11 +1051,11 @@
       "text": "Llevas dos semanas ahorrando dinero y no te has comprado ninguna chuchería, por lo que decides ir al kiosco a comprar:",
       "options":[
         {
-          "text": "Chocolate (Bs. 12.000).",
+          "text": "Chocolate (Bs. 12).",
           "valid": false
         },
         {
-          "text": "Galletas (Bs. 10.000).",
+          "text": "Galletas (Bs. 10).",
           "valid": true
         }
       ],
@@ -1074,11 +1074,11 @@
       "text": "Te provoca un dulce de la cantina, por lo que te compras:",
       "options":[
         {
-          "text": "Una torta de chocolate (Bs. 18.000).",
+          "text": "Una torta de chocolate (Bs. 18).",
           "valid": false
         },
         {
-          "text": "Una bolsita de cotufas (Bs. 10.000).",
+          "text": "Una bolsita de cotufas (Bs. 10).",
           "valid": true
         }
       ],
@@ -1089,7 +1089,7 @@
         },
         "negative": {
           "text": "Recuerda que estás ahorrando y que debes tratar de gastar lo menos posible. Has gastado Bs. ",
-          "spend": 1.8
+          "spend": 0.18
         }
       }
     },
@@ -1097,11 +1097,11 @@
       "text": "Estás en una tienda de videojuegos y están los dos juegos que te quieres comprar, ¿cuál eliges?.",
       "options":[
         {
-          "text": "Los fantasmas (Bs. 30.000).",
+          "text": "Los fantasmas (Bs. 30).",
           "valid": false
         },
         {
-          "text": "Carrera de carros (Bs. 20.000).",
+          "text": "Carrera de carros (Bs. 20).",
           "valid": true
         }
       ],
@@ -1120,11 +1120,11 @@
       "text": "Se te quedó la lonchera en la casa, debes comprar tu desayuno. ¿Qué comprarás?.",
       "options":[
         {
-          "text": "Un sándwich de jamón y queso (Bs. 30.000).",
+          "text": "Un sándwich de jamón y queso (Bs. 30).",
           "valid": true
         },
         {
-          "text": "Una galleta de chocolate (Bs. 15.000).",
+          "text": "Una galleta de chocolate (Bs. 15).",
           "valid": false
         }
       ],
@@ -1143,11 +1143,11 @@
       "text": "Te encuentras ahorrando para comprar las entradas al concierto de tu artista favorito. Entras en una tienda de deportes y están los dos artículos que te quieres comprar. ¿Qué comprarás?.",
       "options":[
         {
-          "text": "El short para hacer ejercicio (Bs. 110.000).",
+          "text": "El short para hacer ejercicio (Bs. 110).",
           "valid": true
         },
         {
-          "text": "El bolso para llevar la ropa de hacer ejercicio (Bs. 150.000).",
+          "text": "El bolso para llevar la ropa de hacer ejercicio (Bs. 150).",
           "valid": false
         }
       ],
@@ -1176,12 +1176,12 @@
       ],
       "feedback": {
         "positive": {
-          "text": "Excelente! Puedes salir de paseo sin tener que comprarte un juguete y así ahorras dinero. Has ahorrado Bs. 25.00",
+          "text": "Excelente! Puedes salir de paseo sin tener que comprarte un juguete y así ahorras dinero. Has ahorrado Bs. 2",
           "spend": 0
         },
         "negative": {
           "text": "Debes saber disfrutar de un paseo sin tener comprar un juguete obligatoriamente y así ahorras. Has gastado Bs. ",
-          "spend": 0.25
+          "spend": 0.2
         }
       }
     },
@@ -1189,11 +1189,11 @@
       "text": "Invitas a un amigo a pasar la tarde en el club, tu amigo tiene sed y le compras en la fuente de soda:",
       "options":[
         {
-          "text": "Un refresco (Bs. 15.000).",
+          "text": "Un refresco (Bs. 15).",
           "valid": false
         },
         {
-          "text": "Una limonada (Bs. 15.000).",
+          "text": "Una limonada (Bs. 15).",
           "valid": true
         }
       ],
