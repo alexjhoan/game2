@@ -13,19 +13,13 @@ function moveAvatar(position) {
 }
 
 function playVideo() {
-  $("#pigVideo").attr("src", "assets/video/video.gif")
-  $("#pigVideo").show()
-  $("#pig").hide()
+  $("#hammer").show()
+  $("#hammer").addClass('hammeranimate')
   setTimeout(() => {
+    $(".breakpig").show()
+    $("#pig").hide()
+    $(".breakpig").addClass('animatepig')
+    $("#hammer").removeClass('hammeranimate')
     soundPig.play()
-  }, 650);
-  setTimeout(() => {
-    $("#breakpig").show()
-    $("#pigVideo").hide()
-    $("#pigVideo").attr("src", "")
-    setTimeout(() => {
-      soundPig.pause()
-      soundPig.currentTime = 0;
-    }, 125);
-  }, 1500);
+  }, 450);
 }

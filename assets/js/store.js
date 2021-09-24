@@ -23,8 +23,10 @@ function newGame() {
   $('#Store .continerPrice').text('')
   $("#selectedAward").prop("disabled", true);
   $(`#Awards .containerselectAward .premio.active`).removeClass('active')
-  $("#breakpig").hide()
+  $(".breakpig").hide()
+  $("#hammer").hide()
   $("#pig").show()
+  $(".breakpig").removeClass('animatepig')
   setTimeout(() => {
     $('#Awards .imgAvatar .hair').attr('fill', settingChild.hair);
     $('#Awards .imgAvatar .skin').attr('fill', settingChild.skin);

@@ -659,26 +659,58 @@ section > div {
   width: 75px;
   height: auto;
   position: absolute;
-  right: 132px;
+  right: 130px;
   bottom: 473px;
+  z-index: 5;
 }
 
 /* piggiVideo */
 
-#Game #pigVideo{
-  width: 151px;
-  height: auto;
+#Game .breakpig.frontpig {
   position: absolute;
-  right: 118px;
-  bottom: 469px;
+  height: 64px;
+  right: 178px;
+  bottom: 477px;
+  z-index: 2;
+  transition: all .5s ease-in-out;
+}
+#Game .breakpig.backpig {
+  height: 64px;
+  right: 121px;
+  position: absolute;
+  bottom: 477px;
+  z-index: 2;
+  transition: all .5s ease-in-out;
 }
 
-#Game #breakpig {
-  width: 95px;
-  height: auto;
+#Game .breakpig.frontpig.animatepig {
+  transform: translate(-8px, 11px) rotate(-30deg);
+}
+
+#Game .breakpig.backpig.animatepig {
+  transform: translate(13px, 11px) rotate(30deg);
+}
+
+#Game .breakpig.money {
+  height: 58px;
+  right: 138px;
   position: absolute;
-  right: 122px;
-  bottom: 475px;
+  bottom: 482px;
+  z-index: 1;
+}
+
+#Game #hammer {
+  position: absolute;
+  top: 13px;
+  right: 243px;
+  width: auto;
+  height: 70px;
+  transition: all .5s ease-in-out;
+  z-index: 8;
+}
+
+#Game #hammer.hammeranimate {
+  transform: translate(50px, 8px) rotate(80deg);
 }
 
 /* game Mount */

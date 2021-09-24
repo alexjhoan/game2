@@ -146,7 +146,9 @@
         setTimeout(() => {
           if ($(".successful").length == cards_memory.length) {
             $('#Game .mountPig p').text(`Bs. ${(money.pig * money.ceros).toLocaleString()}`);
-            playVideo()
+            setTimeout(() => {
+              playVideo()
+            }, 250);
           }
           $(".start_button").removeClass("hidden");
           $(".start_button").prop("disabled", true);

@@ -14,9 +14,11 @@ const getAudios = () => {
   soundFlipCardMemory = new Audio('assets/sounds/flipcard.mp3');
   soundTick = new Audio('assets/sounds/tick.mp3');
   soundBlop = new Audio('assets/sounds/blop.mp3');
-  soundPig = new Audio('assets/sounds/cash.mp3');
+  soundPig = new Audio('assets/sounds/crash.mp3');
   soundShowCard.playbackRate = 1.2;
   soundFlipCardGame.playbackRate = 0.9;
+  soundPig.playbackRate = 0.7;
+  soundPig.volume = 0.7;
 }
 
 function soundInits() {
@@ -58,6 +60,7 @@ $(document).ready(function() {
     $('#loaderContainer').fadeOut()
     $('#cont').show()
   }, 1500);
+  document.oncontextmenu = function(){return false}
 });
 
 // --------------change-screen-----------
